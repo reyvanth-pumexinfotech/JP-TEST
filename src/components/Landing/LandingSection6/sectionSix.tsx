@@ -34,27 +34,31 @@ const FlippableBox: React.FC<{
   isFlipping: boolean;
 }> = ({ className, logoPair, isFlipped, isFlipping }) => {
   return (
-    <div className={`landing-section-six-bento-box ${className} ${isFlipping ? "flipping" : ""}`}>
+    <div
+      className={`landing-section-six-bento-box ${className} ${
+        isFlipping ? "flipping" : ""
+      }`}
+    >
       <div className={`flipper ${isFlipped ? "flipped" : ""}`}>
         <div className="front">
-          <Image 
-            src={logoPair.front} 
-            alt="Front Icon" 
+          <Image
+            src={logoPair.front}
+            alt="Front Icon"
             style={{
-              objectFit: 'contain',
-              width: 'auto',
-              height: 'auto'
+              objectFit: "contain",
+              width: "auto",
+              height: "auto",
             }}
           />
         </div>
         <div className="back">
-          <Image 
-            src={logoPair.back} 
+          <Image
+            src={logoPair.back}
             alt="Back Icon"
             style={{
-              objectFit: 'contain',
-              width: 'auto',
-              height: 'auto'
+              objectFit: "contain",
+              width: "auto",
+              height: "auto",
             }}
           />
         </div>
@@ -90,28 +94,36 @@ const SectionSixBento: React.FC = () => {
   });
 
   useEffect(() => {
-    const boxClasses = ["box1", "box2", "box3", "box4", "box5", "box6", "box7", "box8", "box9"];
+    const boxClasses = [
+      "box1",
+      "box2",
+      "box3",
+      "box4",
+      "box5",
+      "box6",
+      "box7",
+      "box8",
+      "box9",
+    ];
     let currentBoxIndex = 0;
-    
+
     const flipInterval = setInterval(() => {
       const currentBox = boxClasses[currentBoxIndex];
-      
+
       setFlippingBox(currentBox);
-      
+
       setTimeout(() => {
-        setFlippedBoxes(prevStates => ({
+        setFlippedBoxes((prevStates) => ({
           ...prevStates,
-          [currentBox]: !prevStates[currentBox]
+          [currentBox]: !prevStates[currentBox],
         }));
-        
-        
+
         setFlippingBox(null);
       }, 500);
-      
-      
+
       currentBoxIndex = (currentBoxIndex + 1) % boxClasses.length;
     }, 1000);
-    
+
     return () => clearInterval(flipInterval);
   }, []);
 
@@ -129,9 +141,10 @@ const SectionSixBento: React.FC = () => {
 
   return (
     <div className="landing-section-six-main-div">
-      <h1>Our Clients</h1>
+      {/* <h1>Our Clients</h1> */}
+      <h1>私たちのクライアント</h1>
+
       <div className="landing-section-six-bento-container">
-        
         {Object.entries(logoPairs).map(([boxKey, logoPair]) => (
           <FlippableBox
             key={boxKey}
