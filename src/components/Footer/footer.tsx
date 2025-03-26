@@ -20,8 +20,7 @@ function Footer() {
   };
   const handleButtonClickContact = () => {
     // Add your button click logic here
-
-    router.push("/careers");
+    // router.push("/careers");
   };
 
   return (
@@ -128,9 +127,7 @@ function Footer() {
           <h2>Navigation</h2>
           <Link href="/">Home</Link>
           <Link href="/about-us">About Us</Link>
-          <Link href="/careers">Careers</Link>
           <Link href="/contact-us">Contact Us</Link>
-          <Link href="/allsolutions">Solutions</Link>
         </div>
         <div className="footer-main-div-center-right">
           <h2>Services</h2>
@@ -142,9 +139,7 @@ function Footer() {
           <h2>ナビゲーション</h2>
           <Link href="/">ホーム</Link>
           <Link href="/about-us">私たちについて</Link>
-          <Link href="/careers">キャリア</Link>
           <Link href="/contact-us">お問い合わせ</Link>
-          <Link href="/allsolutions">ソリューション</Link>
         </div>
         <div className="footer-main-div-center-right">
           <h2>サービス</h2>

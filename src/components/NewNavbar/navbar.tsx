@@ -191,28 +191,11 @@ const NewNavbar = () => {
           )}
         </div>
 
-        <Link
-          href="/allsolutions"
-          className={`nav-option ${
-            pathname === "/allsolutions" ? "active" : ""
-          }`}
-        >
-          {/* Solutions */}
-          ソリューション
-        </Link>
-        <Link
-          href="/contact-us"
-          className={`nav-option ${pathname === "/contact-us" ? "active" : ""}`}
-        >
-          {/* Contact */}
-          お問い合わせ
-        </Link>
-
-        {/* Careers Button */}
+        {/* Contact Us Button */}
         <div className="navbar-button-sizer">
-          <PrimaryButton onClick={() => router.push("/careers")}>
-            {/* Careers */}
-            採用情報
+          <PrimaryButton onClick={() => router.push("/contact-us")}>
+            {/* Contact Us */}
+            お問い合わせ
           </PrimaryButton>
         </div>
       </div>
@@ -341,41 +324,16 @@ const NewNavbar = () => {
                   </div>
                 )}
 
-                <Link
-                  href="/allsolutions"
-                  className={`mobile-nav-item ${
-                    pathname === "/allsolutions" ? "active" : ""
-                  }`}
-                  onClick={closeMobileMenu}
-                >
-                  <span className="nav-text">
-                    {/* Solutions */}
-                    ソリューション
-                  </span>
-                </Link>
-                <Link
-                  href="/contact-us"
-                  className={`mobile-nav-item ${
-                    pathname === "/contact-us" ? "active" : ""
-                  }`}
-                  onClick={closeMobileMenu}
-                >
-                  <span className="nav-text">
-                    {/* Contact */}
-                    お問い合わせ
-                  </span>
-                </Link>
-
-                {/* Careers Button */}
+                {/* Contact Us Button */}
                 <div className="mobile-careers-button">
                   <PrimaryButton
                     onClick={() => {
-                      router.push("/careers");
+                      router.push("/contact-us");
                       closeMobileMenu();
                     }}
                   >
-                    {/* Careers */}
-                    キャリア
+                    {/* Contact */}
+                    お問い合わせ
                   </PrimaryButton>
                 </div>
               </div>

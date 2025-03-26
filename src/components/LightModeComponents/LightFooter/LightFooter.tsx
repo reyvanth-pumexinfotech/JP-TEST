@@ -118,24 +118,19 @@ function LightFooter() {
           <h2>Navigation</h2>
           <Link href="/">Home</Link>
           <Link href="/about-us">About Us</Link>
-          <Link href="/careers">Careers</Link>
           <Link href="/contact-us">Contact Us</Link>
-          <Link href="/allsolutions">Solutions</Link>
         </div>
         <div className="light-footer-main-div-center-right">
           <h2>Services</h2>
           <Link href="/">Visualization</Link>
           <Link href="/about">Product Engineering</Link>
-          <Link href="/careers">Careers</Link>
         </div>
       </div> */}
         <div className="light-footer-main-div-center-align">
           <h2>ナビゲーション</h2>
           <Link href="/">ホーム</Link>
           <Link href="/about-us">私たちについて</Link>
-          <Link href="/careers">キャリア</Link>
           <Link href="/contact-us">お問い合わせ</Link>
-          <Link href="/allsolutions">ソリューション</Link>
         </div>
         <div className="light-footer-main-div-center-right">
           <h2>サービス</h2>
