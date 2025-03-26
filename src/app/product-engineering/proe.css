@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.product-engineering-main-div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif !important;
+  }
+  
+  .product-engineering-section1-div {
+    position: relative;
+    width: 100%;
+  }
+  
+  .product-engineering-section1-div::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(
+      to top,
+      black 0%,
+      rgba(0, 0, 0, 0.85) 20%,
+      rgba(0, 0, 0, 0.7) 40%,
+      rgba(0, 0, 0, 0.5) 60%,
+      rgba(0, 0, 0, 0.3) 70%,
+      rgba(0, 0, 0, 0.1) 85%,
+      transparent 100%
+    );
+    z-index: 5;
+    pointer-events: none;
+  }
+  
+  
+  .product-engineering-section2-div {
+    position: relative;
+    width: 100%;
+  }
+  
+  .product-engineering-section2-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(
+      to bottom,
+      black 0%,
+      rgba(0, 0, 0, 0.85) 20%,
+      rgba(0, 0, 0, 0.7) 40%,
+      rgba(0, 0, 0, 0.5) 60%,
+      rgba(0, 0, 0, 0.3) 70%,
+      rgba(0, 0, 0, 0.1) 85%,
+      transparent 100%
+    );
+    pointer-events: none;
+  }

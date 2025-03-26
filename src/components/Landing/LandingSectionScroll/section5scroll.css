@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300..900&display=swap');
+
+.landing-section-five-main-div {
+    width: 100%;
+    height: 50vh;
+
+    margin-top: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-grid-pumex {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    width: 95%;
+    align-items: center;
+}
+
+.flip-container {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flipper {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: flip 1.5s ease-in-out; /* Increased speed */
+}
+
+.flipper img {
+    width: 100%;
+    height: auto;
+    backface-visibility: hidden;
+}
+
+@keyframes flip {
+    0% { transform: rotateX(0deg); }
+    50% { transform: rotateX(90deg); }
+    100% { transform: rotateX(0deg); }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "next-pumex-fr",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@splinetool/react-spline": "^4.0.0",
+    "@splinetool/runtime": "^1.9.68",
+    "@studio-freight/lenis": "^1.0.42",
+    "@types/aos": "^3.0.7",
+    "@types/gsap": "^1.20.2",
+    "aos": "^3.0.0-beta.6",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "framer-motion": "^12.5.0",
+    "gsap": "^3.12.7",
+    "lenis": "^1.1.20",
+    "locomotive-scroll": "^4.1.4",
+    "lucide-react": "^0.475.0",
+    "next": "15.1.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-google-recaptcha": "^3.1.0",
+    "smooth-scrollbar": "^8.8.4",
+    "split-type": "^0.3.4",
+    "sweetalert2": "^11.15.10"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-google-recaptcha": "^2.1.9",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.4",
+    "typescript": "^5"
+  }
+}

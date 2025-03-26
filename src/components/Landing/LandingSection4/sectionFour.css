@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.landing-section-four-main-div {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    margin-top: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    font-family: 'Red Hat Display', sans-serif !important;
+    position: relative;
+    contain: layout;
+}
+
+.landing-section-four-main-div::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+    pointer-events: none;
+    z-index: -99;
+}
+
+.landing-section-four-main-div-left {
+    width: 50%;
+    height: 60vh;
+    padding-left: 20px;
+    position: sticky; 
+    top: 100px; 
+    z-index: 100;
+    will-change: transform;
+}
+
+.how-we-do-it-tag-div {
+    width: 20%;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(0, 27, 102, 1) 0%, rgba(0, 42, 157, 1) 31%, rgba(177, 0, 115, 1) 65%, rgba(255, 9, 169, 1) 100%);
+}
+
+.how-we-do-it-tag-div h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.landing-section-four-main-div-left h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 2.5rem;
+}
+
+.landing-number-swap-div {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.number-selections {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #00227B;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    position: relative;
+}
+
+.number-selections h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 15px;
+    font-size: 3rem;
+    transform: translateX(0);
+    opacity: 1;
+    transition: font-size 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.number-selections.active {
+    width: 150px;
+    background-color: #00227B;
+}
+
+.number-selections.active h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 2rem;
+    animation: slideFromLeft 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.number-selections:not(.active) h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.landing-section-four-main-div-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    min-height: 100vh;
+    contain: content;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.landing-scroll-cards {
+    position: relative;
+    width: 80%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    overflow: hidden;
+    height: auto;
+    /* min-height: 500px; */
+    z-index: 100;
+    transform: translateZ(0);
+}
+
+.landing-scroll-cards::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #0044ff, #ff09a9);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.landing-how-card-image {
+    width: 96%;
+    margin-top: 12px;
+    border-radius: 4px;
+    height: 240px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.landing-how-card-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.landing-how-card-details {
+    width: 96%;
+    padding: 20px 0px 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* min-height: 220px; */
+}
+
+.landing-scroll-cards h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: transparent;
+    background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.landing-scroll-cards h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.landing-scroll-cards p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 300;
+    text-align: end;
+    font-size: 1rem;
+    color: #d2d2d2;
+}
+
+/* max-width 1200px */
+@media (max-width: 1200px) {
+    .landing-section-four-main-div-left h1 {
+        font-size: 2.2rem;
+    }
+    
+    .landing-scroll-cards {
+        width: 85%;
+    }
+    
+    .landing-scroll-cards h1 {
+        font-size: 2.2rem;
+    }
+    
+    /* .landing-how-card-details {
+        min-height: 240px;
+    } */
+}
+
+/* max-width 968px */
+@media (max-width: 968px) {
+    .landing-section-four-main-div-left h1 {
+        font-size: 2rem;
+    }
+    
+    .how-we-do-it-tag-div {
+        width: 25%;
+    }
+    
+    .landing-scroll-cards {
+        width: 90%;
+    }
+    
+    .landing-how-card-image {
+        height: auto;
+    }
+    
+    .landing-how-card-details {
+        height: auto;
+    }
+    
+    .landing-scroll-cards h1 {
+        font-size: 2rem;
+    }
+    
+    .landing-scroll-cards h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* max-width 768px */
+@media (max-width: 768px) {
+    .landing-section-four-main-div {
+        flex-direction: column;
+    }
+    
+    .landing-section-four-main-div-left {
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+        position: relative;
+        top: 0;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing-section-four-main-div-left h1 {
+        text-align: center;
+    }
+    
+    .how-we-do-it-tag-div {
+        width: 120px;
+        min-width: fit-content;
+    }
+    
+    .landing-section-four-main-div-left h1 {
+        font-size: 1.8rem;
+    }
+    
+    .landing-number-swap-div {
+        gap: 10px;
+        margin-top: 30px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+    
+    .number-selections {
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+    }
+    
+    .number-selections h1 {
+        font-size: 2rem;
+    }
+    
+    .number-selections.active {
+        width: 100px;
+    }
+    
+    .number-selections.active h1 {
+        font-size: 1.5rem;
+    }
+    
+    .landing-section-four-main-div-right {
+        width: 100%;
+        /* min-height: initial; */
+        gap: 10px;
+        padding: 0 20px;
+    }
+    
+    .landing-scroll-cards {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .landing-how-card-image {
+        height: auto;
+    }
+    
+    .landing-how-card-details {
+        min-height: initial;
+        height: auto;
+        padding-bottom: 10px;
+        padding-right: 0px;
+    }
+    
+    .landing-scroll-cards h2 {
+        font-size: 1.2rem;
+    }
+    
+    .landing-scroll-cards h1 {
+        font-size: 1.8rem;
+    }
+    
+    .landing-scroll-cards p {
+        font-size: 0.9rem;
+    }
+}
+
+/* max-width 480px */
+@media (max-width: 480px) {
+    .landing-section-four-main-div-left h1 {
+        font-size: 1.5rem;
+    }
+    
+    .landing-how-card-image {
+        height: auto;
+    }
+    
+    .landing-scroll-cards h1 {
+        font-size: 1.5rem;
+    }
+    
+    .landing-scroll-cards p {
+        font-size: 0.8rem;
+    }
+}

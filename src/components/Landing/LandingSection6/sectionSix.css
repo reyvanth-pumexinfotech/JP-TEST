@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.landing-section-six-main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 3rem 1rem;
+    width: 100%;
+    margin: 0% auto;
+    background-color: #000000;
+    font-family: 'Red Hat Display', sans-serif !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+ 
+.landing-section-six-main-div h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    width: fit-content;
+    text-align: center;
+    margin-top: 10vh;
+    z-index: 1;
+    font-size: 4rem;
+    font-weight: 300;
+    color: transparent; 
+    background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%); 
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+.landing-section-six-bento-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 120px;
+    gap: 30px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.landing-section-six-bento-box {
+    perspective: 1000px; 
+    height: 100%;
+    position: relative;
+    overflow: visible; 
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+}
+
+
+
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+
+.landing-section-six-bento-box.flipping .flipper {
+    transform: rotateY(180deg);
+}
+
+
+.flipper.flipped {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #00000065;
+    border: 3px solid #2D2D2D;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    padding: 10px; 
+    overflow: hidden; 
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+
+.front img, .back img {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.landing-section-six-bento-box h2 {
+    color: #fff;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+
+.box-1 {
+    grid-column: 1 / 5;
+    grid-row: span 2;
+}
+
+.box-1 .front, .box-1 .back {
+    flex-direction: column;
+}
+
+.box-1 h2 {
+    font-size: 30px;
+}
+
+.box-2 {
+    grid-column: 5 / 9;
+    grid-row: span 1;
+}
+
+.box-2 .front, .box-2 .back {
+    flex-direction: row;
+}
+
+.box-2 h2 {
+    font-size: 30px;
+}
+
+
+.box-3 {
+    grid-column: 9 / 13;
+    grid-row: span 2;
+}
+
+.box-3 .front, .box-3 .back {
+    flex-direction: column;
+}
+
+.box-3 h2 {
+    font-size: 30px;
+}
+
+
+.box-4 {
+    grid-column: 5 / 9;
+    grid-row: span 1;
+}
+
+.box-4 .front, .box-4 .back {
+    flex-direction: row;
+}
+
+.box-4 h2 {
+    font-size: 30px;
+}
+
+.box-5 {
+    grid-column: 1 / 4;
+    grid-row: span 2;
+}
+
+.box-5 .front, .box-5 .back {
+    flex-direction: column;
+}
+
+.box-5 h2 {
+    font-size: 30px;
+}
+
+.box-6 {
+    grid-column: 4 / 8;
+    grid-row: span 1;
+}
+
+.box-6 .front, .box-6 .back {
+    flex-direction: row;
+}
+
+.box-6 h2 {
+    font-size: 30px;
+}
+
+.box-7 {
+    grid-column: 8 / 13;
+    grid-row: span 1;
+}
+
+.box-7 .front, .box-7 .back {
+    flex-direction: row;
+}
+
+.box-7 h2 {
+    font-size: 30px;
+}
+
+.box-8 {
+    grid-column: 4 / 9;
+    grid-row: span 1;
+}
+
+.box-8 .front, .box-8 .back {
+    flex-direction: row;
+}
+
+.box-8 h2 {
+    font-size: 30px;
+}
+
+.box-9 {
+    grid-column: 9 / 13;
+    grid-row: span 1;
+}
+
+.box-9 .front, .box-9 .back {
+    flex-direction: row;
+}
+
+.box-9 h2 {
+    font-size: 30px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    
+    .landing-section-six-main-div h1 {
+        margin-top: 0px;
+    }
+    
+    .landing-section-six-bento-container {
+        width: 100%;
+        gap: 12px;
+        grid-auto-rows: 80px;
+        padding: 15px;
+    }
+    
+    .landing-section-six-bento-box h2 {
+        font-size: 18px;
+    }
+    
+    .front img, .back img {
+        max-width: 85%;
+        max-height: 85%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .landing-section-six-main-div {
+        padding: 3rem 1rem;
+    }
+
+
+    .landing-section-six-bento-container {
+        gap: 10px;
+        grid-auto-rows: 70px;
+        padding: 10px;
+    }
+    
+    .landing-section-six-bento-box h2 {
+        font-size: 16px;
+    }
+
+    .front, .back {
+        border: 1px solid #2D2D2D;
+    }
+    
+    .front img, .back img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+}

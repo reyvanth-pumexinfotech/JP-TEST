@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.founding-memebers-main-div {
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 50px;
+    background-color: #000000;
+    /* background-image: 
+        linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, #000000 100%), 
+        url("/assets/AboutAssets/Layerimg.svg") !important; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.founding-memebers-main-div h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: transparent;
+    font-family: 'Red Hat Display', sans-serif !important;
+    background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.founding-members-view {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.founding-members-card {
+    width: 28%;
+    height: 70vh;
+    border-radius: 8px;
+    background-color: #00000085;
+}
+
+.founding-members-card-top {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.founding-members-card-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px 0px;
+}
+
+.founding-members-card-top-satheesh {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.founding-members-card-top-satheesh img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 25%;
+}
+
+.founding-members-card-bottom {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    overflow: hidden;
+}
+
+.founding-members-card-bottom-left {
+    width: 80%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.founding-members-card-bottom-left h1 {
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Red Hat Display', sans-serif !important;
+    padding-top: 10px;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 2.2rem;
+    padding-left: 0;
+    white-space: nowrap;
+}
+
+.founding-members-card-bottom-left h2 {
+    color: #b3b3b3;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-family: 'Red Hat Display', sans-serif !important;
+}
+
+.founding-members-card-bottom-right {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .founding-members-card {
+        width: 30%;
+    }
+    
+    .founding-members-card-bottom-left h1 {
+        font-size: 1.8rem;
+        font-family: 'Red Hat Display', sans-serif !important;
+    }
+    
+    .founding-members-card-bottom-left h2 {
+        font-size: 1rem;
+        font-family: 'Red Hat Display', sans-serif !important;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .founding-memebers-main-div h1 {
+        font-size: 2.5rem;
+        font-family: 'Red Hat Display', sans-serif !important;
+    }
+    
+    .founding-members-view {
+        gap: 15px;
+    }
+    
+    .founding-members-card {
+        width: 45%;
+        height: 60vh;
+    }
+    
+    .founding-members-card-bottom-left h1 {
+        font-size: 1.5rem;
+        font-family: 'Red Hat Display', sans-serif !important;
+    }
+    
+    .founding-members-card-bottom-left h2 {
+        font-size: 0.9rem;
+        font-family: 'Red Hat Display', sans-serif !important;
+    }
+    
+    .founding-members-card-bottom-right {
+        padding-bottom: 15px;
+    }
+    
+    .founding-members-card-bottom-right img {
+        width: 35px;
+        height: auto;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .founding-memebers-main-div h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        font-family: 'Red Hat Display', sans-serif !important;
+    }
+    
+    .founding-members-view {
+        gap: 20px;
+    }
+    
+    .founding-members-card {
+        width: 80%;
+        height: 65vh;
+        margin-bottom: 20px;
+    }
+    
+    .founding-members-card-bottom {
+        height: auto;
+        min-height: 20%;
+        padding: 10px 0;
+    }
+    
+    .founding-members-card-bottom-left {
+        width: 85%;
+        padding-left: 15px;
+    }
+    
+    .founding-members-card-bottom-left h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        font-family: 'Red Hat Display', sans-serif !important;
+        padding-top: 5px;
+        margin-bottom: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .founding-members-card-bottom-left h2 {
+        font-size: 1.1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .founding-memebers-main-div {
+        margin-top: 30px;
+        min-height: auto;
+        padding-bottom: 10px;
+    }
+    
+    .founding-memebers-main-div h1 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+    
+    .founding-members-view {
+        gap: 15px;
+    }
+    
+    .founding-members-card {
+        width: 90%;
+        height: auto;
+    }
+    
+    .founding-members-card-top,
+    .founding-members-card-top-satheesh {
+        height: 300px; 
+    }
+    
+    .founding-members-card-bottom {
+        height: auto;
+        flex-direction: row;
+        padding: 10px 0;
+    }
+    
+    .founding-members-card-bottom-left {
+        width: 80%;
+        padding: 0 10px;
+    }
+    
+    .founding-members-card-bottom-left h1 {
+        font-size: 1.3rem;
+        font-family: 'Red Hat Display', sans-serif !important;
+        padding-top: 5px;
+        margin-bottom: 5px;
+        white-space: normal;
+        line-height: 1.2;
+    }
+    
+    .founding-members-card-bottom-left h2 {
+        font-size: 0.9rem;
+        line-height: 1.2;
+        white-space: normal;
+        font-family: 'Red Hat Display', sans-serif !important;
+    }
+    
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.secondary-button-main {
+    width: 100%;
+    height: 7vh;
+    border-radius: 8px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    border: 2px solid #000BA2;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Red Hat Display', sans-serif !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 45px 4px #0036c077;
+}
+
+
+.secondary-button-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #0044ff, #ff09a9);
+    transform: translateX(-100%);
+    transition: transform 0.7s ease;
+}
+
+
+.secondary-button-main-boxy {
+    width: 20%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-left: 3px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: transform 0.7s ease;
+}
+
+
+.secondary-button-main-boxy img {
+    transition: transform 0.7s ease;
+}
+
+
+.secondary-button-main-text-side {
+    font-family: 'Red Hat Display', sans-serif;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.3rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+
+.secondary-button-main:hover .secondary-button-main-boxy {
+    transform: translateX(calc(400% - 3px));
+}
+
+
+.secondary-button-main:hover .secondary-button-main-text-side {
+    transform: translateX(-20%);
+}
+
+
+.secondary-button-main:hover::before {
+    transform: translateX(0);
+}
+
+
+.secondary-button-main:hover .secondary-button-main-boxy img {
+    transform: rotate(90deg);
+}
+
+.secondary-button-main:hover {
+    transform: scale(1.02);
+}
+
+
+.secondary-button-main:active {
+    transform: scale(0.98);
+}

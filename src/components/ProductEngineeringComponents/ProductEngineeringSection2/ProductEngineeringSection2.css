@@ -1,0 +1,364 @@
+
+
+.product-engineering-section2-div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 3rem 4rem;
+    width: 100%;
+    margin: 0% auto;
+    width: 100%;
+    background-color: #000000;
+    background-image: url("/assets/visualization/visualizationBentopeBg.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.bento-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 120px;
+    gap: 30px;
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.bento-box {
+    background-color: #00000065;
+    border: 3px solid #2D2D2D;
+    border-radius: 24px;
+    transition: transform 0.3s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+}
+
+.bento-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), #0044ff44 0%, #ff09a930 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.bento-box:hover::before {
+    opacity: 0.6;
+}
+
+/*Common heading styles */
+.bento-box h2 {
+    color: #fff;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+/* NodeJS Specific */
+.nodejs {
+    grid-column: 1 / 5;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nodejs h2 {
+    font-size: 30px;
+}
+
+.nodejs img {
+    width: auto;
+    height: 70%;
+    object-fit: contain;
+}
+
+/* Golang */
+.golang {
+    grid-column: 5 / 9;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.golang h2 {
+    font-size: 30px;
+}
+
+.golang img {
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Java */
+.java {
+    grid-column: 9 / 13;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.java h2 {
+    font-size: 30px;
+}
+
+.java img {
+    height: 70%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Python */
+.python {
+    grid-column: 5 / 9;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.python h2 {
+    font-size: 30px;
+}
+
+.python img {
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* NestJS */
+.nestjs {
+    grid-column: 1 / 4;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nestjs h2 {
+    font-size: 30px;
+}
+
+.nestjs img {
+    height: 70%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Dotnet */
+.dotnet {
+    grid-column: 4 / 8;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.dotnet h2 {
+    font-size: 30px;
+}
+
+.dotnet img {
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* PHP */
+.php {
+    grid-column: 8 / 13;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.php h2 {
+    font-size: 30px;
+}
+
+.php img {
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* MongoDB */
+.mongodb {
+    grid-column: 4 / 9;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.mongodb h2 {
+    font-size: 30px;
+}
+
+.mongodb img {
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* MySQL */
+.mysql {
+    grid-column: 9 / 13;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.mysql h2 {
+    font-size: 30px;
+}
+
+.mysql img {
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1400px) {
+    .bento-container {
+        width: 90%;
+        gap: 25px;
+    }
+    
+    .bento-box h2 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bento-container {
+        width: 95%;
+        gap: 20px;
+        grid-auto-rows: 100px;
+    }
+    
+    .bento-box h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .bento-container {
+        width: 98%;
+        gap: 15px;
+        grid-auto-rows: 90px;
+    }
+    
+    .bento-box h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bento-container {
+        width: 100%;
+        gap: 12px;
+        grid-auto-rows: 80px;
+        padding: 15px;
+    }
+    
+    .bento-box h2 {
+        font-size: 18px;
+    }
+    
+    .bento-box {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .product-engineering-section2-div {
+        padding: 3rem 1rem;
+    }
+
+    .bento-container {
+        gap: 10px;
+        grid-auto-rows: 70px;
+        padding: 10px;
+    }
+    
+    .bento-box h2 {
+        font-size: 13px;
+    }
+    
+    .bento-box {
+        gap: 8px;
+    }
+
+    .nodejs img {
+        height: 30%;
+    }
+
+    .nestjs img {
+        height: 50%;
+    }
+
+    .mysql img {
+        height: 40%;
+    }
+
+    .golang img,
+    .php img,
+    .python img,
+    .dotnet img,
+    .mongodb img {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .bento-container {
+        gap: 8px;
+        grid-auto-rows: 60px;
+        padding: 8px;
+    }
+    
+    .bento-box h2 {
+        font-size: 14px;
+    }
+    
+    .bento-box {
+        gap: 5px;
+    }
+
+}

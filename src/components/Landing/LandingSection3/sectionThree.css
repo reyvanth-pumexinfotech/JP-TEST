@@ -1,0 +1,418 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+.landing-section-three-main-div{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif !important;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.landing-section-three-cards-one{
+    display: flex;
+    width: 100%;
+    /* background-image: url("/assets/LandingPageAssets/RectangleBlue.svg"); */
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 170px -80px;
+    height: 60vh;
+}
+
+.landing-section-three-cards-one-left{
+    display: flex;
+    width: 50%;
+    margin-bottom: 0px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.design-card-landing{
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px solid #2D2D2D;
+}
+
+.inside-card-video{
+    width: 98%;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 4px;
+    height: 97%;
+    border: 2px solid #2D2D2D;
+}
+
+.landing-section-one-background-video{
+    width: 100%;
+    height: 100%;
+    scale: 1.2;
+    background-color: black;
+}
+
+.description-quote-landing-three {
+    width: 75%;
+    height: 7vh;
+    position: relative;
+    bottom: 60px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 4px solid transparent; /* Make border transparent */
+    background-clip: padding-box; /* Prevents background from affecting the border */
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.description-quote-landing-three::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 8px;
+    padding: 2px; /* Match the border thickness */
+    background: linear-gradient(45deg, #0044ff, #ff09a9);
+    -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    transition: all 0.3s ease-in-out;
+}
+
+.description-quote-landing-three:hover {
+    height: 10vh;
+}
+
+.description-quote-landing-three h2{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.landing-section-three-cards-one-right{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+}
+
+.landing-section-three-cards-one-right h1{
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 4rem;
+}
+.landing-section-three-cards-one-right h2{
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.3rem;
+    padding-right: 20px;
+}
+
+/* Second Card css below------------------------- */
+
+.landing-section-three-cards-two{
+    display: flex;
+    width: 100%;
+    /* background-image: url("/assets/LandingPageAssets/RectanglePurple.svg"); */
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 650px -60px;
+    height: 60vh;
+}
+
+.landing-section-three-cards-two-left{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+    height: 100%;
+}
+
+.landing-section-three-cards-two-left h1{
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 4rem;
+    text-align: right;
+}
+.landing-section-three-cards-two-left h2{
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: right;
+    padding-left: 20px;
+}
+
+.landing-section-three-cards-two-right{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Third Card css below------------------------- */
+.landing-section-three-cards-three{
+    display: flex;
+    width: 100%;
+    /* background-image: url("/assets/LandingPageAssets/RectanglePink.svg"); */
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 210px -80px;
+    height: 60vh;
+}
+
+.landing-section-three-cards-three-left{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-section-three-cards-three-right{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+}
+
+.landing-section-three-cards-three-right h1{
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 4rem;
+}
+.landing-section-three-cards-three-right h2{
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.3rem;
+    padding-right: 20px;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 576px) {
+    .landing-section-three-cards-one,
+    .landing-section-three-cards-two,
+    .landing-section-three-cards-three {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        background-position: center -60px;
+        background-size: 100%;
+    }
+    
+    .landing-section-three-cards-one-left,
+    .landing-section-three-cards-one-right,
+    .landing-section-three-cards-two-left,
+    .landing-section-three-cards-two-right,
+    .landing-section-three-cards-three-left,
+    .landing-section-three-cards-three-right {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    
+    .landing-section-three-cards-two {
+        flex-direction: column-reverse;
+    }
+    
+    .design-card-landing {
+        width: 90%;
+        height: 40vh;
+    }
+    
+    .description-quote-landing-three {
+        width: 90%;
+        height: 50px;
+        margin-top: 7px;
+    }
+
+    .description-quote-landing-three h2 {
+        font-size: 0.9rem;
+        padding-left: 5px;
+    }
+    .landing-section-three-cards-one-right h1,
+    .landing-section-three-cards-two-left h1,
+    .landing-section-three-cards-three-right h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .landing-section-three-cards-one-right h2,
+    .landing-section-three-cards-two-left h2,
+    .landing-section-three-cards-three-right h2 {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .landing-section-three-cards-two-left h1,
+    .landing-section-three-cards-two-left h2 {
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 769px) {
+    .landing-section-three-cards-one,
+    .landing-section-three-cards-two,
+    .landing-section-three-cards-three {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+        background-position: center -60px;
+        background-size: 80%;
+    }
+    
+    .landing-section-three-cards-one-left,
+    .landing-section-three-cards-one-right,
+    .landing-section-three-cards-two-left,
+    .landing-section-three-cards-two-right,
+    .landing-section-three-cards-three-left,
+    .landing-section-three-cards-three-right {
+        width: 100%;
+        height: auto;
+    }
+    
+    .landing-section-three-cards-two {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+
+    .landing-section-three-cards-two {
+        margin-top: 30px;
+    }
+    
+    .design-card-landing {
+        width: 80%;
+        height: 45vh;
+    }
+    
+    .description-quote-landing-three {
+        width: 85%;
+        height: 8vh;
+    }
+
+    .description-quote-landing-three h2 {
+        font-size: 0.9rem;
+        padding-left: 5px;
+    }
+    
+    .landing-section-three-cards-one-right h1,
+    .landing-section-three-cards-two-left h1,
+    .landing-section-three-cards-three-right h1 {
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .landing-section-three-cards-one-right h2,
+    .landing-section-three-cards-two-left h2,
+    .landing-section-three-cards-three-right h2 {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0 15px;
+    }
+    
+    .landing-section-three-cards-two-left h1,
+    .landing-section-three-cards-two-left h2 {
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .landing-section-three-cards-one,
+    .landing-section-three-cards-two,
+    .landing-section-three-cards-three {
+        height: auto;
+        padding: 20px;
+        background-size: 50%;
+        background-position: 100px -60px;
+    }
+    
+    .landing-section-three-cards-two {
+        background-position: 450px -60px;
+    }
+    
+    .design-card-landing {
+        width: 85%;
+        height: 40vh;
+    }
+    
+    .inside-card-video img {
+        object-fit: contain;
+    }
+    
+    .description-quote-landing-three {
+        width: 85%;
+        height: 8vh;
+    }
+
+    .description-quote-landing-three h2 {
+        font-size: 0.9rem;
+        padding-left: 5px;
+    }
+    
+    .landing-section-three-cards-one-right h1,
+    .landing-section-three-cards-two-left h1,
+    .landing-section-three-cards-three-right h1 {
+        font-size: 3rem;
+    }
+    
+    .landing-section-three-cards-one-right h2,
+    .landing-section-three-cards-two-left h2,
+    .landing-section-three-cards-three-right h2 {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .landing-section-three-cards-one,
+    .landing-section-three-cards-two,
+    .landing-section-three-cards-three {
+        background-size: 45%;
+        background-position: 150px -70px;
+    }
+    
+    .landing-section-three-cards-two {
+        background-position: 550px -60px;
+    }
+    
+    .design-card-landing {
+        width: 80%;
+    }
+    
+    .landing-section-three-cards-one-right h1,
+    .landing-section-three-cards-two-left h1,
+    .landing-section-three-cards-three-right h1 {
+        font-size: 3.5rem;
+    }
+}

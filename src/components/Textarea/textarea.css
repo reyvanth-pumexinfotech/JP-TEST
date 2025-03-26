@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.generic-text-field{
+    width: 100%;
+    height: 25vh;
+    border: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-radius: 8px;
+    font-weight: 300;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    font-family: 'Red Hat Display', sans-serif !important;
+    font-weight: 400;
+    background-color: #000000;
+    margin-bottom: 20px;
+    transition: all 0.2s ease-in;
+    outline: 2.26px solid #0e00a6;
+}
+
+.generic-text-field:hover{
+    outline:3px solid #0e00a6;
+    border: none;
+}
+
+.generic-text-field:focus {
+    outline: 2.26px solid #0e00a6;
+    border: none;
+}
+
+.generic-text-field:active {
+    outline: 2.26px solid #0e00a6;
+    border: none;
+}

@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap'); 
+
+.newnav-main-div{
+    width:97%;
+    height: 8vh;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.933);
+    border: 2px solid #6161616e;
+    position: fixed !important;
+    display: flex;
+    margin-top: 20px;
+    z-index: 999;
+    border: 2px solid transparent;
+    font-family: 'Red Hat Display', sans-serif !important;
+    box-shadow: 0 0 20px #003acd62;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.newnav-main-div-left{
+    width: 30%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.newnav-main-div-left img{
+    transform: scale(0.7);
+}
+
+.newnav-main-div-right{
+    width:70%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-option{
+    color: rgb(255, 255, 255);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+}
+
+.nav-option:hover {
+    transition: all 0.3s ease-in-out;
+    color: transparent; 
+    background: linear-gradient(to right, #003acd 0%, #8c09ff 50%);
+    -webkit-background-clip: text; 
+    background-clip: text;
+}
+
+.nav-option.active {
+    color: transparent; 
+    background: linear-gradient(to right, #003acd 0%, #8c09ff 50%);
+    -webkit-background-clip: text; 
+    background-clip: text;
+  }
+
+  .active-nav-option {
+    color: transparent !important;
+    background: linear-gradient(to right, #003acd 0%, #8c09ff 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.navbar-button-sizer{
+    position: relative;
+    left: 5px;
+    width: 20%;
+    transform: scale(0.9);
+}
+
+.dropdown-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-with-arrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top:55px;
+    left: 0;
+    margin-top: 0;
+    width: 320px;
+    background-color: #000000;
+    border-radius: 10px;
+    overflow: visible;
+    animation: fadeIn 0.2s ease-out;
+    z-index: 1000;
+}
+
+/* .dropdown-menu::before, */
+.dropdown-menu::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/* .dropdown-menu::before {
+    border-width: 11px;
+    border-color: transparent transparent  #000000 transparent;
+    margin-bottom: -1px;
+} */
+
+.dropdown-menu::after {
+    border-width: 10px;
+    border-color: transparent transparent #000000 transparent;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+
+.dropdown-title {
+    color: rgb(255, 255, 255);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.dropdown-description {
+    font-family: 'Red Hat Display', sans-serif;
+    color: #666666;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.dropdown-item:hover .dropdown-title {
+    background: linear-gradient(to right, #003acd, #ff09bd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.active-nav-option {
+    color: transparent !important;
+    background: linear-gradient(to right, #003acd 0%, #8c09ff 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Mobile Menu */
+.mobile-menu-toggle {
+    display: none;
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+    z-index: 10001;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active {
+    transform: rotate(180deg);
+}
+
+.hamburger-icon {
+    width: 28px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.line-1.active {
+    transform: rotate(45deg) translate(7px, 7px);
+    background: linear-gradient(to right, #003acd, #8c09ff);
+}
+
+.line-2.active {
+    opacity: 0;
+}
+
+.line-3.active {
+    transform: rotate(-45deg) translate(7px, -7px);
+    background: linear-gradient(to right, #8c09ff, #003acd);
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    overflow: hidden;
+}
+
+.mobile-menu.active {
+    opacity: 1;
+}
+
+.mobile-menu-inner {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.933);
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    overflow-y: auto;
+}
+
+.mobile-menu.active .mobile-menu-inner {
+    right: 0;
+}
+
+.mobile-menu-header {
+    padding: 28px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-branding {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mobile-menu-content {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    overflow-y: auto;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+
+
+.expertise-dropdown {
+    cursor: pointer;
+  }
+  
+  .nav-icon svg {
+    transition: transform 0.3s ease;
+  }
+  
+  .expertise-dropdown .nav-icon svg.rotated {
+    transform: rotate(90deg);
+  }
+
+
+  .expertise-dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+    align-items: center;
+  }
+  
+  .expertise-dropdown .nav-icon .rotated {
+    transform: rotate(90deg);
+  }
+  
+
+  .mobile-nav-item.sub-item > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.mobile-careers-button {
+    margin-top: 16px;
+    padding: 0 4px;
+    width: 200px;
+  }
+  
+  .mobile-menu-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .mobile-menu-content {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+.mobile-nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-bottom: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .mobile-nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #003acd, #8c09ff);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+} */
+
+.mobile-nav-item:active {
+    transform: scale(0.98);
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.nav-text {
+    font-family: 'Red Hat Display', sans-serif;
+    flex:1;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-description {
+    font-family: 'Red Hat Display', sans-serif;
+    color: #666;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.mobile-nav-item.active .nav-text {
+    background: linear-gradient(to right, #003acd, #8c09ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-icon {
+    color: #666;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    padding-top: 5px;
+}
+
+.mobile-nav-item:active .nav-icon,
+.mobile-nav-item.active .nav-icon {
+    transform: translateX(4px);
+    color: #8c09ff;
+}
+
+.expertise-item {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+.expertise-item > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.mobile-cta-button {
+    font-family: 'Red Hat Display', sans-serif;
+    width: 100%;
+    padding: 12px !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.mobile-cta-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.5s ease;
+}
+
+.mobile-cta-button:hover::after {
+    left: 100%;
+}
+
+
+
+/* Media Queries */
+
+
+@media screen and (max-width: 1024px) {
+    .newnav-main-div-right {
+        gap: 15px;
+    }
+    
+    .nav-option {
+        font-size: 16px;
+    }
+    
+    .navbar-button-sizer {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .newnav-main-div {
+        height: 60px;
+    }
+    
+    .newnav-main-div-left {
+        width: 50%;
+    }
+    
+    .newnav-main-div-right {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+        align-items: center;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-text {
+        font-size: 1.5rem;
+    }
+
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .newnav-main-div {
+        width: 95%;
+        margin-top: 10px;
+    }
+    
+    .newnav-main-div-left {
+        width: 70%;
+    }
+    
+    .newnav-main-div-left img {
+        transform: scale(0.6);
+    }
+
+    .mobile-menu-content {
+        padding: 20px 16px;
+    }
+    
+    .mobile-nav-item {
+        padding: 12px 14px;
+    }
+    
+
+    .menu-section-title {
+        font-size: 11px;
+        padding-left: 14px;
+    }
+
+    .mobile-menu-footer {
+        padding: 20px 16px;
+    }
+}

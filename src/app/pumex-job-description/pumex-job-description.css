@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.application-main-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif !important;
+    background-color: #000000;
+    color: white;
+    background-image: url("../../../public/assets/careers/applicationPageBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.back-button-div {
+    align-self: flex-start;
+    margin-top: 100px;  
+    margin-left: 1.5%;
+}
+
+.back-button {
+    background-color: rgba(0, 0, 0, 0.37);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #666666;
+}
+
+.title-div {
+    text-align: center;
+    margin: 60px 20px 20px 20px;
+    width: 80%;
+}
+
+.title-top-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title-bottom-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    padding: 10px 0;
+}
+
+.title-top-div h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.job-apply-fixer-div{
+    width: 18%;
+    height: 6vh;
+}
+.tags-div {
+    display: flex;
+    gap: 15px;
+}
+
+.tag {
+    padding: 5px 0px;
+    border-radius: 5px;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.tag:not(:last-child)::after {
+    content: " | ";
+    margin-left: 15px;
+    font-weight: 200;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.social-icons img:active {
+    transform: scale(0.9);
+}
+
+
+.share-button {
+    background: transparent;
+    border: none;
+}
+
+.content-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: 40px 0px 100px 0px;
+}
+
+.about-div,
+.what-you-will-do-div,
+.what-we-are-looking-div,
+.qualifications {
+    padding: 0px;
+}
+
+.about-div h2,
+.what-you-will-do-div h2,
+.what-we-are-looking-div h2,
+.qualifications h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-div p,
+.what-you-will-do-div p,
+.what-we-are-looking-div p,
+.qualifications p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 0.5px;  /* Slightly spaced out for readability */
+    line-height: 1.6;       /* Balanced spacing between lines */
+}
+
+.secondary-button-main-text-side {
+    padding: 0px 12px;
+}
+
+.designation-noticeperiod-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.designation {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+}
+
+.notice-period {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+.job-apply-fixer-div{
+    width: 30%;
+}
+}
+
+
+@media (max-width: 768px) {
+    .application-main-container {
+        padding: 10px;
+    }
+
+    .back-button-div {
+        margin-right: 20px;
+    }
+    .title-top-div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-top-div h2 {
+        font-size: 45px;
+        margin-bottom: 50px;
+        white-space: nowrap;
+    }
+
+    .title-bottom-div {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .content-div {
+        flex-direction: column;
+    }
+
+    .social-icons {
+        gap: 30px;
+    }
+
+    .job-apply-fixer-div{
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .title-top-div h2 {
+        font-size: 40px;
+    }
+
+    .tags-div span {
+        font-size: 15px;
+    }
+
+    .tag:not(:last-child)::after {
+        content: none;
+    }
+
+    .job-apply-fixer-div{
+        width: 80%;
+    }
+}

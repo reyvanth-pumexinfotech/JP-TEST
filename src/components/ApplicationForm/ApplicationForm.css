@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.application-modal-main-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 10000;
+    animation: slideIn 0.9s ease-out forwards;
+    font-family: 'Red Hat Display', sans-serif !important;
+  }
+  
+  .application-modal-content-div.closing {
+    animation: slideOut 0.9s ease-in forwards;
+}
+
+  .application-modal-content-div {
+    padding: 1rem 2rem 2rem 2rem;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+    height: 100vh;
+    z-index: 1000;
+  }
+
+  .application-modal-content-div h2 {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-size: 50px;
+    font-family: 'Red Hat Display', sans-serif !important;
+    font-weight: 300;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .application-modal-close-button {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .application-modal-form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.5rem; */
+  }
+  
+  .application-modal-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .application-modal-form-group label {
+    font-size: 1.2rem;
+    font-family: 'Red Hat Display', sans-serif !important;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+
+  .application-form-file-upload {
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    max-width: 400px; /* Adjust as needed */
+    height: 7vh;
+    border: 2px solid #ff00dd;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .application-form-file-upload:hover {
+    background-color: #00227B;
+    border: 2px solid #ffffff;
+    color: #fff;
+  }
+
+  .application-form-file-upload:active{
+    transform: scale(0.9);
+  }
+  
+  .file-name-display {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Red Hat Display', sans-serif !important;
+    border: none;
+    outline: none;
+    padding-left: 5px; /* Adjust to give space for the icon */
+    cursor: pointer;
+  }
+  
+  
+  .file-upload-icon {
+    /* position: absolute; */
+    left: 10px;
+    width: 24px; 
+    height: 24px;
+    pointer-events: none; /* Prevent click on the image */
+  }
+  
+
+
+.application-modal-form-apply-button {
+  width: 60%;
+  margin-top: 20px;
+}
+
+.field-error-message {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+
+.application-modal-form-group {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.generic-input-field {
+  margin-bottom: 10px;
+}
+
+
+
+
+.pumex-admin-popups-swal-popup{
+  width: 30%;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid #002a93;
+  background-color: #000000;
+  -webkit-box-shadow: 10px 13px 30px -15px rgba(255,0,255,1);
+-moz-box-shadow: 10px 13px 30px -15px rgba(255,0,255,1);
+box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 0.323);
+}
+
+
+  .pumex-admin-popups-swal-title{
+    color: transparent; 
+    background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 400;
+  }
+
+  .pumex-admin-popups-swal-text{
+    color: #ffffff;
+    font-weight: 400;
+  }
+
+  .pumex-admin-popups-swal-button{
+    width: 15vw;
+    height: 5vh;
+    border-radius: 10px;
+    background: linear-gradient(
+        to right,
+        #003acd 0%,  
+        #e100b0 100% 
+    );
+  }
+
+  .pumex-admin-popups-swal-button:active{
+    transform: scale(1.05);
+  }
+
+
+
+  
+@media (max-width: 480px) {
+  .application-modal-content-div {
+      width: 95%;
+      max-width: 320px;
+      padding: 0.8rem;
+  }
+
+  .application-modal-content-div h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+  }
+
+  .application-modal-form-group label {
+      font-size: 0.9rem;
+  }
+
+  .file-name-display {
+      font-size: 0.85rem;
+      padding-left: 8px;
+  }
+
+  .application-form-file-upload {
+      height: 6vh;
+      padding: 4px;
+  }
+
+  .application-modal-form-apply-button {
+      width: 60%;
+  }
+
+  .application-modal-form-apply-button >.primary-button-main {
+    height: 6vh;
+  }
+
+}

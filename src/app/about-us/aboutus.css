@@ -1,0 +1,39 @@
+.about-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.line-div-for-about-us{
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
+}
+
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+  }
+  
+  .loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-top-color: #ff09a9;
+    border-bottom-color: #0044ff;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

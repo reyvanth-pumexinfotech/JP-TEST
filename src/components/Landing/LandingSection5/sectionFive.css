@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.landing-section-five-main-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 50px 0;
+  font-family: 'Red Hat Display', sans-serif !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+.whyus-title-div {
+  width: 50%;
+  color: #fff;
+  position: sticky;
+  top: 9vh;
+}
+
+.whyus-content-div {
+  width: 50%;
+  color: #fff;
+}
+
+.whyus-title-div h1 {
+  padding-left: 50px;
+  font-family: 'Red Hat Display', sans-serif !important;
+  font-size: 4rem;
+  font-weight: 300;
+  color: transparent; 
+  background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%); 
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.whyus-content-div h2 {
+  margin: 50px 0px 0px 0px;
+  font-family: 'Red Hat Display', sans-serif !important;
+  font-size: 3rem;
+  color: #dedede;
+  font-weight: 300;
+}
+
+.whyus-content-div p {
+  font-size: 1.1rem;
+  font-family: 'Red Hat Display', sans-serif !important;
+  font-weight: 300;
+  color: #e1e1e1;
+  padding-right: 100px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .landing-section-five-main-div {
+      flex-direction: column;
+      padding: 60px 0;
+    }
+
+
+    .whyus-title-div {
+      width: 100%;
+      position: static;
+      text-align: center;
+    }
+
+    .whyus-content-div {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .whyus-title-div h1 {
+      padding-left: 0;
+      font-size: 3rem;
+    }
+
+    .whyus-content-div h2 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    .whyus-content-div p {
+      font-size: 1.2rem;
+      padding-right: 0;
+      text-align: center;
+    }
+
+  }
+  

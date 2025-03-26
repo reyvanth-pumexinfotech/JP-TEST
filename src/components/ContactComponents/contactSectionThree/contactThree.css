@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.contact-section-three-main-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif !important;
+}
+
+.contact-section-three-main-div-box {
+    width: 70%;
+    height: 60vh;
+    border-radius: 8px;
+    border: 2px solid #2D2D2D;
+    overflow: hidden;
+    position: relative; 
+}
+
+.contact-background-video {
+    transform: scale(1.5);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content-overlay {
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);  
+}
+
+.content-overlay h1 {
+    background: linear-gradient(to right, #0044ff 0%, #ff09a9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    margin: 0;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 3.7rem;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.content-overlay h2 {
+    color: #fff;
+    margin: 0;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.contact-join-us-button-sizer{
+    margin-top: 60px;
+    width: 23%;
+}
+
+
+
+
+/* Media Queries */
+
+
+@media screen and (max-width: 900px) {
+
+
+    .contact-section-three-main-div-box {
+        width: 80%;
+    }
+
+    .content-overlay h1 {
+        font-size: 3rem;
+    }
+
+    .content-overlay h2 {
+        font-size: 1.4rem;
+
+    }
+
+    .contact-join-us-button-sizer {
+        width: 30%;
+        margin-top: 40px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .contact-section-three-main-div-box {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .content-overlay h1 {
+        font-size: 2.5rem;
+        padding: 0 15px;
+    }
+
+    .content-overlay h2 {
+
+        font-size: 1.2rem;
+        padding: 0 15px;
+    }
+
+    .content-overlay h2 br {
+        display: none;
+    }
+
+
+
+    .contact-join-us-button-sizer {
+        width: 40%;
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+    .contact-section-three-main-div {
+        margin-bottom: 30px;
+        padding: 0 2.5%;
+    }
+
+
+    .contact-section-three-main-div-box {
+        width: 97%;
+        height: 45vh;
+    }
+
+    .content-overlay h1 {
+        font-size: 2rem;
+        padding: 0 10px;
+
+    }
+
+    .content-overlay h2 {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .contact-join-us-button-sizer {
+        width: 60%;
+        margin-top: 25px;
+    }
+
+    .contact-background-video {
+        transform: scale(1.8);
+    }
+
+
+
+
+}
+

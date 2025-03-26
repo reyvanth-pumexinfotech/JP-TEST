@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.landing-container-main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  scroll-behavior: smooth;
+  font-family: 'Red Hat Display', sans-serif !important;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
+  color: #fff;
+}
+
+.hidden-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}

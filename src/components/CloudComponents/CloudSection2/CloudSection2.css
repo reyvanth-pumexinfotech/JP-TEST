@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.cloud-section2-div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 3rem 4rem;
+    width: 100%;
+    margin: 0% auto;
+    width: 100%;
+    background-color: #000000;
+    background-image: url("/assets/visualization/visualizationBentopeBg.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.bento-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 120px;
+    gap: 30px;
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.bento-box {
+    background-color: #00000065;
+    border: 3px solid #2D2D2D;
+    border-radius: 24px;
+    transition: transform 0.3s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+    gap: 10px;
+}
+
+.bento-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), #0044ff44 0%, #ff09a930 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.bento-box:hover::before {
+    opacity: 0.6;
+}
+
+/*Common heading styles */
+.bento-box h2 {
+    color: #fff;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+/* azure Specific */
+.azure {
+    grid-column: 1 / 5;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.azure h2 {
+    font-size: 30px;
+}
+
+.azure img {
+    width: auto;
+    height: 50%;
+    object-fit: contain;
+}
+
+/* aws */
+.aws {
+    grid-column: 5 / 9;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.aws h2 {
+    font-size: 30px;
+}
+
+.aws img {
+    height: 60%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* gcp */
+.gcp {
+    grid-column: 9 / 13;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.gcp {
+    font-size: 30px;
+}
+
+.gcp img {
+    height: 50%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* nutanix */
+.nutanix {
+    grid-column: 5 / 9;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.nutanix h2 {
+    font-size: 30px;
+}
+
+.nutanix img {
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1400px) {
+    .bento-container {
+        width: 90%;
+        gap: 25px;
+    }
+    
+    .bento-box h2 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bento-container {
+        width: 95%;
+        gap: 20px;
+        grid-auto-rows: 100px;
+    }
+    
+    .bento-box h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .bento-container {
+        width: 98%;
+        gap: 15px;
+        grid-auto-rows: 90px;
+    }
+    
+    .bento-box h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bento-container {
+        width: 100%;
+        gap: 12px;
+        grid-auto-rows: 80px;
+        padding: 15px;
+    }
+    
+    .bento-box h2 {
+        font-size: 18px;
+    }
+    
+    .bento-box {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .cloud-section2-div {
+        padding: 3rem 1rem;
+    } 
+
+    .bento-container {
+        gap: 10px;
+        grid-auto-rows: 70px;
+        padding: 10px;
+    }
+    
+    .bento-box h2 {
+        font-size: 16px;
+    }
+    
+    .bento-box {
+        gap: 8px;
+    }
+
+    .azure img,
+    .gcp img {
+        height: 40%;
+    }
+
+    .nutanix {
+        padding-left: 15px;
+    }
+
+    .aws img,
+    .nutanix img {
+        height: 40%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .bento-container {
+        gap: 8px;
+        grid-auto-rows: 60px;
+        padding: 8px;
+    }
+    
+    .bento-box h2 {
+        font-size: 14px;
+    }
+    
+    .bento-box {
+        gap: 5px;
+    }
+
+}

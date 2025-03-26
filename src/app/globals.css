@@ -1,0 +1,105 @@
+/* Import Red Hat Display font */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --background: #ffffff;
+  
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Red Hat Display','Chakra Petch', Arial, Helvetica, sans-serif; /* Apply the Red Hat Display font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+
+
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+  height: 10px; /* Height of the scrollbar (for horizontal scrollbar) */
+}
+
+/* Custom Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #0a0a0a; /* Track background */
+}
+
+/* Custom Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #0044ff 0%, #ff09a9); /* Gradient thumb color */
+  border-radius: 10px;
+  width: 5px; /* Thumb width */
+  transition: box-shadow 0.3s ease;
+}
+
+/* Glowing effect for the thumb */
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 10px 2px rgba(0, 68, 255, 0.6), 0 0 20px 5px rgba(255, 9, 169, 0.6);
+}
+
+/* Custom Scrollbar for vertical scrolling */
+::-webkit-scrollbar-thumb:vertical {
+  border-radius: 10px;
+}
+
+/* Custom Scrollbar for horizontal scrolling */
+::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 10px;
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.landing-section-one-main-div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    align-items: center;
+    background-color: #000000;
+    /* background-image: url("/assets/landingPage/Landing-section-one-bg.svg") !important; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif !important;
+    background-position: top left;
+}
+
+.landing-section-one-main-div-top{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.spline-render{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 2px solid #fff; */
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+}
+
+.spline-render canvas {
+    padding-top: 10px;
+    transform: scale(1.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Transparent background */
+    pointer-events: auto; /* Ensures it captures mouse events */
+}
+
+.landing-section-one-main-div-bottom{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-section-one-main-div-bottom h1{
+    color: #fff;
+    font-weight: 300;
+    font-size: 5.5rem;
+    font-family: 'Red Hat Display', sans-serif !important;
+}
+.landing-section-one-main-div-bottom h2{
+    color: #c3c3c3;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-family: 'Red Hat Display', sans-serif !important;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 576px) {
+
+    .landing-section-one-main-div{
+        width: 100%;
+        height: 90vh;
+    }
+    .landing-section-one-main-div-top {
+        height: 60%;
+    }
+    
+    .landing-section-one-main-div-bottom {
+        height: 40%;
+        justify-content: flex-start;
+    }
+    
+    .spline-render canvas {
+        transform: scale(1.2);
+    }
+    
+    .landing-section-one-main-div-bottom h1 {
+        font-size: 3.5rem;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .landing-section-one-main-div-bottom h2 {
+        font-size: 1rem;
+        padding: 0 15px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 769px) {
+    
+    .landing-section-one-main-div-top {
+        height: 65%;
+    }
+    
+    .landing-section-one-main-div-bottom {
+        height: 35%;
+        justify-content: center;
+    }
+    
+    .spline-render canvas {
+        transform: scale(1.2);
+    }
+    
+    .landing-section-one-main-div-bottom h1 {
+        font-size: 3.5rem;
+        padding: 0 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .landing-section-one-main-div-bottom h2 {
+        font-size: 1.1rem;
+        padding: 0 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .landing-section-one-main-div-top {
+        height: 70%;
+    }
+    
+    .landing-section-one-main-div-bottom {
+        height: 30%;
+    }
+    
+    .spline-render canvas {
+        transform: scale(1.2);
+    }
+    
+    .landing-section-one-main-div-bottom h1 {
+        font-size: 4rem;
+        padding: 0 20px;
+        margin-bottom: 15px;
+    }
+    
+    .landing-section-one-main-div-bottom h2 {
+        font-size: 1.15rem;
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .spline-render canvas {
+        transform: scale(1.2);
+    }
+    
+    .landing-section-one-main-div-bottom h1 {
+        font-size: 4.5rem;
+    }
+    
+    .landing-section-one-main-div-bottom h2 {
+        font-size: 1.18rem;
+        padding: 0 40px;
+    }
+}

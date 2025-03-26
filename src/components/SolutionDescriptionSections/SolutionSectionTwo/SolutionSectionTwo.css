@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.solution-section-two-main-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-family: 'Red Hat Display', sans-serif !important;
+  gap: 3rem;
+  padding: 0 3rem 3rem;
+}
+
+.solution-section-two-cards-div {
+  position: sticky;
+  top: 12%;
+  width: 30%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.solution-section-two-cards-div-card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.solution-section-two-cards-div-card h2 {
+  font-size: 24px;
+  font-family: 'Red Hat Display', sans-serif;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.solution-section-two-cards-div-card p {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons .share-button:nth-child(4) img {
+  width: 43px !important;
+  height: 43px !important; 
+}
+
+.social-icons img:hover {
+  transform: scale(1.3);
+}
+
+.social-icons img:active {
+  transform: scale(0.9);
+}
+
+.share-button {
+  background: transparent;
+  border: none;
+}
+
+
+.solution-card-contact-button {
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+.solution-section-two-contents-div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.solution-section-two-contents-div h2 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.solution-section-two-contents-div p {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+
+/* Light Mode Styles */
+
+.light .solution-section-two-main-div {
+  color: #000;
+}
+
+.light .theme-toggle {
+  border: 1px solid #000;
+  color: #000;
+}
+
+
+.light .solution-section-two-cards-div-card {
+  background: #f7f2e9;
+}
+
+.light .solution-section-two-card-input-field input {
+  color: #555;
+  background: #fff;
+}
+
+.light .solution-section-two-contents-div h2 {
+  font-family: 'Red Hat Display', sans-serif;
+  color: #000;
+}
+
+.light .solution-section-two-contents-div p {
+  font-family: 'Red Hat Display', sans-serif;
+  color: #000;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .solution-section-two-main-div {
+    padding: 0 2rem 2rem;
+    gap: 2rem;
+  }
+
+  .solution-section-two-cards-div {
+    width: 40%;
+  }
+
+  .solution-section-two-contents-div {
+    width: 60%;
+  }
+
+  .solution-section-two-cards-div-card h2 {
+    font-size: 22px;
+  }
+
+  .solution-section-two-cards-div-card p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .solution-section-two-main-div {
+    flex-direction: column;
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  .solution-section-two-cards-div {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    top: 0;
+    order: 2;
+  }
+
+  .solution-section-two-cards-div-card h2 {
+    text-align: center;
+  }
+
+  .solution-section-two-cards-div-card p {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .solution-section-two-contents-div {
+    width: 100%;
+    order: 1;
+  }
+
+  .solution-card-contact-button {
+    width: 45%;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media screen and (max-width: 480px) {
+  .solution-section-two-main-div {
+    padding: 0 1rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .solution-section-two-cards-div {
+    width: 95%;
+  }
+
+  .solution-section-two-cards-div-card {
+    padding: 15px;
+  }
+
+  .solution-section-two-cards-div-card h2 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .solution-section-two-cards-div-card p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .solution-section-two-contents-div {
+    gap: 1.5rem;
+  }
+
+  .solution-section-two-contents-div p {
+    text-align: justify;
+  }
+
+
+  .solution-card-contact-button {
+    width: 50%;
+  }
+
+}
+
+
+
+
