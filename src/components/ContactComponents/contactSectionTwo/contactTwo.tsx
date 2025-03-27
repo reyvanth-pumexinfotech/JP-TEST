@@ -15,30 +15,26 @@ import EmailLogo from "../../../../public/assets/ContactAssets/contact-email.svg
 import { createContactApi } from "@/services/contactService";
 
 function ContactTwo() {
-  // Temporary state to store input values
   const [emailId, setEmailId] = useState("");
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
 
-  // Initialize AOS only once on mount
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation speed
+      duration: 1000,
       easing: "ease-in-out",
-      once: false, // Ensures it animates every time you scroll
-      debounceDelay: 50, // Improves performance
+      once: false,
+      debounceDelay: 50,
       throttleDelay: 99,
     });
   }, []);
 
-
   const handleSubmit = async () => {
-    // ✅ Validate required fields
     if (!name.trim() || !emailId.trim()) {
       Swal.fire({
-        title: "Let’s Get This Right",
-        text: "Name and Email are required!",
+        title: "正しい情報を入力してください",
+        text: "名前とメールアドレスは必須です！",
         customClass: {
           popup: "pumex-admin-popups-swal-popup",
           title: "pumex-admin-popups-swal-title",
@@ -49,12 +45,11 @@ function ContactTwo() {
       return;
     }
 
-    // ✅ Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(emailId)) {
       Swal.fire({
-        title: "Let’s Get This Right",
-        text: "Please enter a valid email address!",
+        title: "正しい情報を入力してください",
+        text: "有効なメールアドレスを入力してください！",
         customClass: {
           popup: "pumex-admin-popups-swal-popup",
           title: "pumex-admin-popups-swal-title",
@@ -65,12 +60,11 @@ function ContactTwo() {
       return;
     }
 
-    // ✅ Validate phone number format
     const phoneRegex = /^\d{0,13}$/;
     if (phoneNumber && !phoneRegex.test(phoneNumber)) {
       Swal.fire({
-        title: "Error!",
-        text: "Phone number must be numeric and up to 13 digits!",
+        title: "エラー！",
+        text: "電話番号は数字で、最大13桁まで入力してください！",
         customClass: {
           popup: "pumex-admin-popups-swal-popup",
           title: "pumex-admin-popups-swal-title",
@@ -82,10 +76,9 @@ function ContactTwo() {
     }
 
     try {
-      // 🔄 Show loading Swal alert
       Swal.fire({
-        title: "Submitting...",
-        text: "Please wait while we submit your contact details.",
+        title: "送信中...",
+        text: "お問い合わせ内容を送信しています。お待ちください。",
         customClass: {
           popup: "pumex-admin-popups-swal-popup",
           title: "pumex-admin-popups-swal-title",
@@ -98,7 +91,6 @@ function ContactTwo() {
         },
       });
 
-      // 📨 Send data to API
       await createContactApi({
         name,
         email: emailId,
@@ -106,11 +98,10 @@ function ContactTwo() {
         message,
       });
 
-      // ✅ Success Swal alert
       Swal.fire({
         icon: "success",
-        title: "Success",
-        text: "Your contact details have been submitted successfully!",
+        title: "成功",
+        text: "お問い合わせ内容が正常に送信されました！",
         customClass: {
           popup: "pumex-admin-popups-swal-popup",
           title: "pumex-admin-popups-swal-title",
@@ -119,17 +110,15 @@ function ContactTwo() {
         },
       });
 
-      // Reset form
       setName("");
       setEmailId("");
       setPhoneNumber("");
       setMessage("");
     } catch {
-      // ❌ Error Swal alert
       Swal.fire({
         icon: "error",
-        title: "Submission Failed",
-        text: "Something went wrong. Please try again later.",
+        title: "送信失敗",
+        text: "何か問題が発生しました。後でもう一度お試しください。",
         customClass: {
           popup: "pumex-admin-popups-swal-popup",
           title: "pumex-admin-popups-swal-title",
@@ -147,54 +136,54 @@ function ContactTwo() {
           <div className="contact-us-box">
             <div className="contact-us-box-left">
               <div className="contact-form-input-sizer">
-                <label htmlFor="name">Name *</label>
+                <label htmlFor="name">名前 *</label>
                 <Inputfield
                   type="text"
                   name="name"
-                  placeholder="Enter your Name"
+                  placeholder="名前を入力してください"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div className="contact-form-input-sizer">
-                <label htmlFor="emailId">Email Id *</label>
+                <label htmlFor="emailId">メールアドレス *</label>
                 <Inputfield
                   type="text"
                   name="emailId"
-                  placeholder="Enter your Email ID"
+                  placeholder="メールアドレスを入力してください"
                   value={emailId}
                   onChange={(e) => setEmailId(e.target.value)}
                 />
               </div>
               <div className="contact-form-input-sizer">
-                <label htmlFor="phoneNumber">Phone Number</label>
+                <label htmlFor="phoneNumber">電話番号</label>
                 <Inputfield
                   type="text"
                   name="phoneNumber"
-                  placeholder="Enter your Phone Number"
+                  placeholder="電話番号を入力してください"
                   value={phoneNumber}
                   onChange={(e) => setPhoneNumber(e.target.value)}
                 />
               </div>
               <div className="contact-form-input-sizer message-mobile-only">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">メッセージ</label>
                 <Textarea
                   name="message"
-                  placeholder="Enter your Message"
+                  placeholder="メッセージを入力してください"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
               <div className="contact-button-input-sizer">
-                <PrimaryButton onClick={handleSubmit}>Submit</PrimaryButton>
+                <PrimaryButton onClick={handleSubmit}>送信</PrimaryButton>
               </div>
             </div>
             <div className="contact-us-box-right">
               <div className="contact-form-input-sizer">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">メッセージ</label>
                 <Textarea
                   name="message"
-                  placeholder="Enter your Message"
+                  placeholder="メッセージを入力してください"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 />
@@ -205,8 +194,8 @@ function ContactTwo() {
         <div className="contact-section-two-main-div-right" data-aos="flip-up">
           <div className="contact-us-email-box">
             <div className="contact-us-email-box-top">
-              <Image src={EmailLogo} alt="Email Icon" />
-              <h2>Email </h2>
+              <Image src={EmailLogo} alt="メールアイコン" />
+              <h2>メール</h2>
             </div>
             <div className="contact-us-email-box-bottom">
               <h3>hr@pumexinfotech.com</h3>
@@ -214,44 +203,61 @@ function ContactTwo() {
           </div>
           <div className="contact-us-box-address-box">
             <div className="contact-us-box-address-box-top">
-              <Image src={Location} alt="Location Icon" />
-              <h2>Address</h2>
+              <Image src={Location} alt="所在地アイコン" />
+              <h2>住所</h2>
             </div>
             <div className="contact-us-box-address-box-bottom">
-              <div className="contact-us-box-address-box-bottom-location" data-aos="flip-up">
-                <Image src={GlobalLocation} alt="Global Location" />
+              <div
+                className="contact-us-box-address-box-bottom-location"
+                data-aos="flip-up"
+              >
+                <Image src={GlobalLocation} alt="グローバル所在地" />
                 <a
                   href="https://maps.app.goo.gl/SATMnBehvUtSFSWx8"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <h3>
-                    <span>PUMEX COMPUTING </span><br />7172 Regional St, Ste 210 Dublin,<br /> CA 94568,  USA
+                    <span>プメックス・コンピューティング</span>
+                    <br />
+                    7172 リージョナル ストリート, スイート 210,
+                    <br /> カリフォルニア州 94568, アメリカ合衆国
                   </h3>
                 </a>
               </div>
-              <div className="contact-us-box-address-box-bottom-location" data-aos="flip-up">
-                <Image src={GlobalLocation} alt="Global Location" />
+              <div
+                className="contact-us-box-address-box-bottom-location"
+                data-aos="flip-up"
+              >
+                <Image src={GlobalLocation} alt="グローバル所在地" />
                 <a
                   href="https://maps.app.goo.gl/YgVVQSpHaF91q65F9"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <h3>
-                    <span>PUMEX INFOTECH PVT. LTD.</span><br />10-A1, Trans Asia Cyber Park, Infopark
-                    Phase 2, Kakkanad, Kochi, Kerala-682303, India
+                    <span>プメックス・インフォテック</span>
+                    <br />
+                    10-A1, トランスアジア サイバーパーク, インフォパー
+                    <br />
+                    カカナード, コーチ, ケララ州 - 682303, インド
                   </h3>
                 </a>
               </div>
-              <div className="contact-us-box-address-box-bottom-location" data-aos="flip-up">
-                <Image src={GlobalLocation} alt="Global Location" />
+              <div
+                className="contact-us-box-address-box-bottom-location"
+                data-aos="flip-up"
+              >
+                <Image src={GlobalLocation} alt="グローバル所在地" />
                 <a
                   href="https://maps.app.goo.gl/WBdeb4hBPJsw2maT8"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <h3>
-                    <span>PUMEX CONSULTING </span><br />6040 Montevideo Rd,Mississauga, <br />Ontario L5N2T4, Canada
+                    <span>プメックス・コンサルティング </span>
+                    6040 モンテビデオ ロード, ミシサガ, <br /> オンタリオ
+                    L5N2T4, カナダ
                   </h3>
                 </a>
               </div>

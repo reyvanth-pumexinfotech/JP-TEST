@@ -27,7 +27,8 @@ const Loader = ({ onLoadingComplete }: { onLoadingComplete: () => void }) => {
         <div className="loader-bg-image"></div>
         <div className="loader-content">
           <h2>{progress}%</h2>
-          <p>Good things take time... and we are worth the wait!</p>
+          {/* <p>Good things take time... and we are worth the wait!</p> */}
+          <p>良いものには時間がかかる...そして私たちは待つ価値がある！</p>
         </div>
       </div>
     )
