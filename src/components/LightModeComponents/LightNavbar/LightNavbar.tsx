@@ -84,19 +84,20 @@ const LightNavbar = () => {
       {/* Left Section */}
       <div className="light-newnav-main-div-left">
         <Link href="/">
-          
           <Image
-                        src="https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/Pumex-black-logo.svg"
-                        alt="Pumex Logo"
-                        width={150}
-                        height={50}
-                      />
+            src="https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/Pumex-black-logo.svg"
+            alt="Pumex Logo"
+            width={150}
+            height={50}
+          />
         </Link>
       </div>
 
       {/* Mobile Menu Toggle */}
       <div
-        className={`light-mobile-menu-toggle ${isMobileMenuOpen ? "active" : ""}`}
+        className={`light-mobile-menu-toggle ${
+          isMobileMenuOpen ? "active" : ""
+        }`}
         onClick={toggleMobileMenu}
       >
         <div className="light-hamburger-icon">
@@ -118,13 +119,17 @@ const LightNavbar = () => {
           href="/"
           className={`light-nav-option ${pathname === "/" ? "active" : ""}`}
         >
-          Home
+          {/* Home */}
+          ホーム
         </Link>
         <Link
           href="/about-us"
-          className={`light-nav-option ${pathname === "/about-us" ? "active" : ""}`}
+          className={`light-nav-option ${
+            pathname === "/about-us" ? "active" : ""
+          }`}
         >
-          About Us
+          {/* About Us */}
+          私たちについて
         </Link>
 
         {/* Expertise Dropdown */}
@@ -139,7 +144,8 @@ const LightNavbar = () => {
               isExpertiseOpen ? "light-active-nav-option" : ""
             }`}
           >
-            Area of Expertise
+            {/* Area of Expertise */}
+            専門分野
           </Link>
 
           {isExpertiseOpen && (
@@ -150,9 +156,13 @@ const LightNavbar = () => {
                   pathname === "/visualization" ? "active" : ""
                 }`}
               >
-                <div className="light-dropdown-title">Visualization</div>
+                <div className="light-dropdown-title">
+                  {/* Visualization */}
+                  ビジュアライゼーション
+                </div>
                 <div className="light-dropdown-description">
-                  Advanced data visualization solutions
+                  {/* Advanced data visualization solutions */}
+                  高度なデータビジュアライゼーションソリューション
                 </div>
               </Link>
               <Link
@@ -161,9 +171,13 @@ const LightNavbar = () => {
                   pathname === "/product-engineering" ? "active" : ""
                 }`}
               >
-                <div className="light-dropdown-title">Product Engineering</div>
+                <div className="light-dropdown-title">
+                  {/* Product Engineering */}
+                  プロダクトエンジニアリング
+                </div>
                 <div className="light-dropdown-description">
-                  End-to-end product development services
+                  {/* End-to-end product development services */}
+                  エンドツーエンドの製品開発サービス
                 </div>
               </Link>
               <Link
@@ -172,34 +186,24 @@ const LightNavbar = () => {
                   pathname === "/cloud" ? "active" : ""
                 }`}
               >
-                <div className="light-dropdown-title">Cloud</div>
+                <div className="light-dropdown-title">
+                  {/* Cloud */}
+                  クラウド
+                </div>
                 <div className="light-dropdown-description">
-                  Cloud infrastructure and solutions
+                  {/* Cloud infrastructure and solutions */}
+                  クラウドインフラとソリューション
                 </div>
               </Link>
             </div>
           )}
         </div>
 
-        <Link
-          href="/allsolutions"
-          className={`light-nav-option ${
-            pathname === "/allsolutions" ? "active" : ""
-          }`}
-        >
-          Solutions
-        </Link>
-        <Link
-          href="/contact-us"
-          className={`light-nav-option ${pathname === "/contact-us" ? "active" : ""}`}
-        >
-          Contact
-        </Link>
-
         {/* Careers Button */}
         <div className="light-navbar-button-sizer">
-          <PrimaryButton onClick={() => router.push("/careers")}>
-            Careers
+          <PrimaryButton onClick={() => router.push("/contact-us")}>
+            {/* Contact Us */}
+            お問い合わせ
           </PrimaryButton>
         </div>
       </div>
@@ -213,13 +217,12 @@ const LightNavbar = () => {
           <div className="light-mobile-menu-inner">
             <div className="light-mobile-menu-header">
               <div className="light-mobile-branding">
-                
                 <Image
-                              src="https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/Pumex-black-logo.svg"
-                              alt="Pumex Logo"
-                              width={120}
-                              height={40}
-                            />
+                  src="https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/Pumex-black-logo.svg"
+                  alt="Pumex Logo"
+                  width={120}
+                  height={40}
+                />
               </div>
             </div>
 
@@ -232,7 +235,10 @@ const LightNavbar = () => {
                   }`}
                   onClick={closeMobileMenu}
                 >
-                  <span className="light-nav-text">Home</span>
+                  <span className="light-nav-text">
+                    {/* Home */}
+                    ホーム
+                  </span>
                 </Link>
                 <Link
                   href="/about-us"
@@ -241,7 +247,10 @@ const LightNavbar = () => {
                   }`}
                   onClick={closeMobileMenu}
                 >
-                  <span className="light-nav-text">About Us</span>
+                  <span className="light-nav-text">
+                    {/* About Us */}
+                    私たちについて
+                  </span>
                 </Link>
 
                 {/* Expertise with dropdown functionality */}
@@ -249,7 +258,10 @@ const LightNavbar = () => {
                   className="light-mobile-nav-item light-expertise-dropdown"
                   onClick={toggleExpertiseDropdown}
                 >
-                  <span className="light-nav-text">Area of Expertise</span>
+                  <span className="light-nav-text">
+                    {/* Area of Expertise */}
+                    専門分野
+                  </span>
                   <span className="light-nav-icon">
                     <ChevronRight
                       size={25}
@@ -271,9 +283,13 @@ const LightNavbar = () => {
                       onClick={closeMobileMenu}
                     >
                       <div>
-                        <span className="light-nav-text">Visualization</span>
+                        <span className="light-nav-text">
+                          {/* Visualization */}
+                          ビジュアライゼーション
+                        </span>
                         <span className="light-nav-description">
-                          Advanced data visualization solutions
+                          {/* Advanced data visualization solutions */}
+                          高度なデータビジュアライゼーションソリューション
                         </span>
                       </div>
                     </Link>
@@ -285,9 +301,13 @@ const LightNavbar = () => {
                       onClick={closeMobileMenu}
                     >
                       <div>
-                        <span className="light-nav-text">Product Engineering</span>
+                        <span className="light-nav-text">
+                          {/* Product Engineering */}
+                          プロダクトエンジニアリング
+                        </span>
                         <span className="light-nav-description">
-                          End-to-end product development
+                          {/* End-to-end product development */}
+                          エンドツーエンドの製品開発
                         </span>
                       </div>
                     </Link>
@@ -299,43 +319,29 @@ const LightNavbar = () => {
                       onClick={closeMobileMenu}
                     >
                       <div>
-                        <span className="light-nav-text">Cloud Solutions</span>
+                        <span className="light-nav-text">
+                          {/* Cloud */}
+                          クラウド
+                        </span>
                         <span className="light-nav-description">
-                          Cloud infrastructure and solutions
+                          {/* Cloud infrastructure and solutions */}
+                          クラウドインフラとソリューション
                         </span>
                       </div>
                     </Link>
                   </div>
                 )}
 
-                <Link
-                  href="/allsolutions"
-                  className={`light-mobile-nav-item ${
-                    pathname === "/allsolutions" ? "active" : ""
-                  }`}
-                  onClick={closeMobileMenu}
-                >
-                  <span className="light-nav-text">Solutions</span>
-                </Link>
-                <Link
-                  href="/contact-us"
-                  className={`light-mobile-nav-item ${
-                    pathname === "/contact-us" ? "active" : ""
-                  }`}
-                  onClick={closeMobileMenu}
-                >
-                  <span className="light-nav-text">Contact</span>
-                </Link>
-
                 {/* Careers Button */}
                 <div className="light-mobile-careers-button">
                   <PrimaryButton
                     onClick={() => {
-                      router.push("/careers");
+                      router.push("/contact-us");
                       closeMobileMenu();
                     }}
                   >
-                    Careers
+                    {/* Contact */}
+                    お問い合わせ
                   </PrimaryButton>
                 </div>
               </div>

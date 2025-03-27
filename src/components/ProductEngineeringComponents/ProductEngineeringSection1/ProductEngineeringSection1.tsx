@@ -18,34 +18,41 @@ interface ProductEngineeringItem {
 const productengineeringData: ProductEngineeringItem[] = [
   {
     id: 1,
-    image: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/solutions-image/anton-maksimov-5642-su-wrkNQmhmdvY-unsplash.jpg",
+    image:
+      "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/solutions-image/anton-maksimov-5642-su-wrkNQmhmdvY-unsplash.jpg",
     category: "ProductEngineering",
     title: "The ProductEngineering Title",
-    description: "How to recognize patterns in complex datasets How to recognize patterns in complex datasets How to recognize patterns in complex datasets",
+    description:
+      "How to recognize patterns in complex datasets How to recognize patterns in complex datasets How to recognize patterns in complex datasets",
 
     position: "HR Executive",
   },
   {
     id: 2,
-    image: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/solutions-image/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg",
+    image:
+      "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/solutions-image/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg",
     category: "Product Engineering",
     title: "Understanding Data Patterns",
-    description: "How to recognize patterns in complex datasets recognize patterns in complex datasets recognize patterns in complex datasets",
+    description:
+      "How to recognize patterns in complex datasets recognize patterns in complex datasets recognize patterns in complex datasets",
 
     position: "Data Scientist",
   },
   {
     id: 3,
-    image: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/solutions-image/sumup-S8UnShrQUeE-unsplash.jpg",
+    image:
+      "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/solutions-image/sumup-S8UnShrQUeE-unsplash.jpg",
     category: "Product Engineering",
     title: "Cloud Optimization Engine",
-    description: "How to craft compelling narratives using visualization How to craft compelling narratives using visualization narratives using visualization",
+    description:
+      "How to craft compelling narratives using visualization How to craft compelling narratives using visualization narratives using visualization",
 
     position: "Tech Lead",
   },
   {
     id: 4,
-    image: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/solutions-image/anton-maksimov-5642-su-wrkNQmhmdvY-unsplash.jpg",
+    image:
+      "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/solutions-image/anton-maksimov-5642-su-wrkNQmhmdvY-unsplash.jpg",
     category: "Product Engineering",
     title: "User-Centered Visualizations",
     description: "Creating visualizations that prioritize user experience ",
@@ -54,16 +61,19 @@ const productengineeringData: ProductEngineeringItem[] = [
   },
   {
     id: 5,
-    image: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/solutions-image/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg",
+    image:
+      "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/solutions-image/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg",
     category: "Product Engineering",
     title: "The Future of Visualization",
-    description: "Emerging trends in the visualization landscape Emerging trends in the visualization landscape",
+    description:
+      "Emerging trends in the visualization landscape Emerging trends in the visualization landscape",
 
     position: "Research Director",
   },
   {
     id: 6,
-    image: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/solutions-image/sumup-S8UnShrQUeE-unsplash.jpg",
+    image:
+      "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/solutions-image/sumup-S8UnShrQUeE-unsplash.jpg",
     category: "Product Engineering",
     title: "Telling Stories with Data",
     description: "How to craft compelling narratives using visualization",
@@ -102,8 +112,10 @@ const ProductEngineeringCard: React.FC<ProductEngineeringCardProps> = ({
             </div>
             <div className="product-engineering-left-featuredCard-content-bottom-div">
               <div className="card-author-div">
-              <span className="author-position">Category</span>
-              <span className="author-name">{productengineering.category}</span>
+                <span className="author-position">Category</span>
+                <span className="author-name">
+                  {productengineering.category}
+                </span>
               </div>
               <button
                 className="nav-button card-button"
@@ -133,45 +145,50 @@ const ProductEngineeringCard: React.FC<ProductEngineeringCardProps> = ({
   }
 
   return (
-    <div className="product-engineering-right-top-cardlist-card" onClick={onClick}>
-     <div className="product-engineering-right-top-cardlist-card-inner-div"> 
-      <div className="product-engineering-right-top-cardlist-card-image-div">
-        <Image
-          src={productengineering.image}
-          alt={productengineering.title}
-          className="card-image"
-          fill
-        />
-      </div>
-      <div className="product-engineering-right-top-cardlist-card-content-div">
-        <h3>{productengineering.title}</h3>
+    <div
+      className="product-engineering-right-top-cardlist-card"
+      onClick={onClick}
+    >
+      <div className="product-engineering-right-top-cardlist-card-inner-div">
+        <div className="product-engineering-right-top-cardlist-card-image-div">
+          <Image
+            src={productengineering.image}
+            alt={productengineering.title}
+            className="card-image"
+            fill
+          />
+        </div>
+        <div className="product-engineering-right-top-cardlist-card-content-div">
+          <h3>{productengineering.title}</h3>
 
-        <div className="product-engineering-right-top-cardlist-card-content-bottom-div">
-          <div className="card-author-div">
-          <span className="author-position">Category</span>
-            <span className="author-name">{productengineering.category}</span>
-            
-          </div>
-          <button className="nav-button card-button" onClick={() => (window.location.href = "/solution-description")}>
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+          <div className="product-engineering-right-top-cardlist-card-content-bottom-div">
+            <div className="card-author-div">
+              <span className="author-position">Category</span>
+              <span className="author-name">{productengineering.category}</span>
+            </div>
+            <button
+              className="nav-button card-button"
+              onClick={() => (window.location.href = "/solution-description")}
             >
-              <path
-                d="M9 6L15 12L9 18"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 6L15 12L9 18"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };
@@ -183,19 +200,19 @@ export default function ProductEngineeringSection1() {
     ProductEngineeringItem[]
   >([]);
 
-
   const updateVisibleProductEngineerings = useCallback(() => {
     const nextProductEngineerings: ProductEngineeringItem[] = [];
     for (let i = 1; i <= 2; i++) {
-      const index = (selectedProductEngineeringIndex + i) % productengineeringData.length;
+      const index =
+        (selectedProductEngineeringIndex + i) % productengineeringData.length;
       nextProductEngineerings.push(productengineeringData[index]);
     }
     setVisibleProductEngineerings(nextProductEngineerings);
   }, [selectedProductEngineeringIndex]);
-  
+
   useEffect(() => {
     updateVisibleProductEngineerings();
-  }, [updateVisibleProductEngineerings]); 
+  }, [updateVisibleProductEngineerings]);
 
   const handlePrevClick = () => {
     setSelectedProductEngineeringIndex((prevIndex) =>
@@ -209,19 +226,21 @@ export default function ProductEngineeringSection1() {
     );
   };
 
-
   return (
     <div className="product-engineering-section1-div">
       <h1>
-      Product Engineering: Crafting Scalable, High-Performance<br />
-       Product Engineering for a Tech-Driven Future.
+        Product Engineering: Crafting Scalable, High-Performance
+        <br />
+        Product Engineering for a Tech-Driven Future.
       </h1>
 
       <div className="product-engineering-content-div">
         <div className="product-engineering-left-div">
           {productengineeringData[selectedProductEngineeringIndex] && (
             <ProductEngineeringCard
-            productengineering={productengineeringData[selectedProductEngineeringIndex]}
+              productengineering={
+                productengineeringData[selectedProductEngineeringIndex]
+              }
               isFeatured={true}
             />
           )}
@@ -247,13 +266,6 @@ export default function ProductEngineeringSection1() {
               explore your vision, strategic objectives, and specific to
               transform your goals into reality.
             </p>
-            <div className="explore-btn">
-              <PrimaryButton
-                onClick={() => (window.location.href = "/allsolutions")}
-              >
-                Explore More{" "}
-              </PrimaryButton>
-            </div>
           </div>
         </div>
       </div>

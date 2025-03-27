@@ -1,198 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
-.landing-section-two-main-div{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-image: url("/assets/landingPage/Landing-section-two-bg.svg"); */
-    background-size: cover;
-    font-family: 'Red Hat Display', sans-serif !important;
-    background-repeat: no-repeat;
-    background-position:50%;
+.landing-section-two-main-div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: url("/assets/landingPage/Landing-section-two-bg.svg"); */
+  background-size: cover;
+  font-family: "Red Hat Display", sans-serif !important;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
-.landing-section-two-aniamte-top{
-    width: 100%;
-    height: 30%;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.landing-section-two-aniamte-top {
+  width: 100%;
+  height: 30%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.landing-section-two-aniamte-top h3{
-    color: #c3c3c3;
-    font-weight: 300;
-    font-size: 1.2rem;
-    font-family: 'Red Hat Display', sans-serif !important;
+.landing-section-two-aniamte-top h3 {
+  color: #c3c3c3;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-family: "Red Hat Display", sans-serif !important;
 }
 
 .landing-section-two-animate-bottom {
-    width: 100%;
-    height: 70%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; 
-    justify-items: center; 
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
 }
 
 .number-section-two-left {
-    width: 100%;
-    height: 35vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-.number-section-two-left h1{
-    font-size: 8rem;
-    font-weight: 300;
-    font-family: 'Red Hat Display', sans-serif !important;
-    color: transparent; 
-    background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%); 
-    -webkit-background-clip: text;
-    background-clip: text;
+.number-section-two-left h1 {
+  font-size: 6rem;
+  font-weight: 300;
+  font-family: "Red Hat Display", sans-serif !important;
+  color: transparent;
+  background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
-.number-section-two-left h2{
-    font-size: 1.6rem;
-    font-family: 'Red Hat Display', sans-serif !important;
-    font-weight: 300;
-    color: #fff;
+.number-section-two-left h2 {
+  font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif !important;
+  font-weight: 300;
+  color: #fff;
 }
-
-
-
-
 
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
-
-    .landing-section-two-aniamte-top{
-      width: 100%;
-      height: auto;
-      padding-top: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .landing-section-two-aniamte-top h3{
-      color: #c3c3c3;
-      font-weight: 300;
-      text-align: center;
-      font-size: 1.2rem;
-      padding-bottom: 30px;
-      font-family: 'Red Hat Display', sans-serif !important;
-    }
-  
-    .landing-section-two-animate-bottom {
-      width: 100%;
-      height: auto;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px; 
-      justify-items: center; 
-    }
-  
-    .number-section-two-left {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 30px;
-      justify-content: center;
-    }
-  
-    .number-section-two-left h1{
-      font-size: 5rem;
-      font-weight: 300;
-      font-family: 'Red Hat Display', sans-serif !important;
-      color: transparent; 
-      background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%); 
-      -webkit-background-clip: text;
-      background-clip: text;
-    }
-  
-    .number-section-two-left h2{
-      font-size: 1.2rem;
-      padding-right: 20px;
-      text-align: center;
-      font-family: 'Red Hat Display', sans-serif !important;
-      font-weight: 300;
-    }
-  }
-
-  
-@media screen and (max-width: 480px) {
-  .landing-section-two-main-div{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-image: url("/assets/landingPage/Landing-section-two-bg.svg"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:50%;
-    padding: 10px;
-}
-
-.landing-section-two-aniamte-top{
+  .landing-section-two-aniamte-top {
     width: 100%;
     height: auto;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.clients-scroll-landing-page {
-  width: 100%;
-
-}
-
-
-.scroll-animation {
-  width: 100%;
-
-}
-
-  .scroll-animation img {
-    width: auto !important;
-    transform: scale(0.35);
-    transition: transform 0.3s ease;
-  }
-  
-  .scroll-animation img:hover {
-    filter: grayscale(100%);
-    transform: scale(0.18);
   }
 
-.landing-section-two-aniamte-top h3{
+  .landing-section-two-aniamte-top h3 {
     color: #c3c3c3;
     font-weight: 300;
     text-align: center;
     font-size: 1.2rem;
     padding-bottom: 30px;
-    font-family: 'Red Hat Display', sans-serif !important;
-}
+    font-family: "Red Hat Display", sans-serif !important;
+  }
 
-.landing-section-two-animate-bottom {
+  .landing-section-two-animate-bottom {
     width: 100%;
-    height: 70%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; 
-    justify-items: center; 
-}
+    gap: 20px;
+    justify-items: center;
+  }
 
-.number-section-two-left {
+  .number-section-two-left {
     width: 100%;
     height: auto;
     display: flex;
@@ -200,25 +101,110 @@
     align-items: center;
     margin-top: 30px;
     justify-content: center;
-}
+  }
 
-
-
-.number-section-two-left h1{
-    font-size: 3.5rem;
+  .number-section-two-left h1 {
+    font-size: 5rem;
     font-weight: 300;
-    font-family: 'Red Hat Display', sans-serif !important;
-    color: transparent; 
-    background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%); 
+    font-family: "Red Hat Display", sans-serif !important;
+    color: transparent;
+    background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%);
     -webkit-background-clip: text;
     background-clip: text;
+  }
+
+  .number-section-two-left h2 {
+    font-size: 1.2rem;
+    padding-right: 20px;
+    text-align: center;
+    font-family: "Red Hat Display", sans-serif !important;
+    font-weight: 300;
+  }
 }
-.number-section-two-left h2{
+
+@media screen and (max-width: 480px) {
+  .landing-section-two-main-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url("/assets/landingPage/Landing-section-two-bg.svg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding: 10px;
+  }
+
+  .landing-section-two-aniamte-top {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .clients-scroll-landing-page {
+    width: 100%;
+  }
+
+  .scroll-animation {
+    width: 100%;
+  }
+
+  .scroll-animation img {
+    width: auto !important;
+    transform: scale(0.35);
+    transition: transform 0.3s ease;
+  }
+
+  .scroll-animation img:hover {
+    filter: grayscale(100%);
+    transform: scale(0.18);
+  }
+
+  .landing-section-two-aniamte-top h3 {
+    color: #c3c3c3;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 30px;
+    font-family: "Red Hat Display", sans-serif !important;
+  }
+
+  .landing-section-two-animate-bottom {
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .number-section-two-left {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .number-section-two-left h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: "Red Hat Display", sans-serif !important;
+    color: transparent;
+    background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .number-section-two-left h2 {
     font-size: 1rem;
     padding-right: 20px;
     text-align: center;
-    font-family: 'Red Hat Display', sans-serif !important;
+    font-family: "Red Hat Display", sans-serif !important;
     font-weight: 300;
-}
-
+  }
 }
