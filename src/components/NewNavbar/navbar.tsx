@@ -113,13 +113,15 @@ const NewNavbar = () => {
           href="/"
           className={`nav-option ${pathname === "/" ? "active" : ""}`}
         >
-          Home
+          {/* Home */}
+          ホーム
         </Link>
         <Link
           href="/about-us"
           className={`nav-option ${pathname === "/about-us" ? "active" : ""}`}
         >
-          About Us
+          {/* About Us */}
+          私たちについて
         </Link>
 
         {/* Expertise Dropdown */}
@@ -134,7 +136,8 @@ const NewNavbar = () => {
               isExpertiseOpen ? "active-nav-option" : ""
             }`}
           >
-            Area of Expertise
+            {/* Area of Expertise */}
+            専門分野
           </Link>
 
           {isExpertiseOpen && (
@@ -145,9 +148,13 @@ const NewNavbar = () => {
                   pathname === "/visualization" ? "active" : ""
                 }`}
               >
-                <div className="dropdown-title">Visualization</div>
+                <div className="dropdown-title">
+                  {/* Visualization */}
+                  ビジュアライゼーション
+                </div>
                 <div className="dropdown-description">
-                  Advanced data visualization solutions
+                  {/* Advanced data visualization solutions */}
+                  高度なデータビジュアライゼーションソリューション
                 </div>
               </Link>
               <Link
@@ -156,9 +163,13 @@ const NewNavbar = () => {
                   pathname === "/product-engineering" ? "active" : ""
                 }`}
               >
-                <div className="dropdown-title">Product Engineering</div>
+                <div className="dropdown-title">
+                  {/* Product Engineering */}
+                  プロダクトエンジニアリング
+                </div>
                 <div className="dropdown-description">
-                  End-to-end product development services
+                  {/* End-to-end product development services */}
+                  エンドツーエンドの製品開発サービス
                 </div>
               </Link>
               <Link
@@ -167,34 +178,24 @@ const NewNavbar = () => {
                   pathname === "/cloud" ? "active" : ""
                 }`}
               >
-                <div className="dropdown-title">Cloud</div>
+                <div className="dropdown-title">
+                  {/* Cloud */}
+                  クラウド
+                </div>
                 <div className="dropdown-description">
-                  Cloud infrastructure and solutions
+                  {/* Cloud infrastructure and solutions */}
+                  クラウドインフラとソリューション
                 </div>
               </Link>
             </div>
           )}
         </div>
 
-        <Link
-          href="/allsolutions"
-          className={`nav-option ${
-            pathname === "/allsolutions" ? "active" : ""
-          }`}
-        >
-          Solutions
-        </Link>
-        <Link
-          href="/contact-us"
-          className={`nav-option ${pathname === "/contact-us" ? "active" : ""}`}
-        >
-          Contact
-        </Link>
-
-        {/* Careers Button */}
+        {/* Contact Us Button */}
         <div className="navbar-button-sizer">
-          <PrimaryButton onClick={() => router.push("/careers")}>
-            Careers
+          <PrimaryButton onClick={() => router.push("/contact-us")}>
+            {/* Contact Us */}
+            お問い合わせ
           </PrimaryButton>
         </div>
       </div>
@@ -210,7 +211,7 @@ const NewNavbar = () => {
               <div className="mobile-branding">
                 <Image
                   src={PumexLogo}
-                  alt="Pumex Logo"
+                  alt="ピュメックスロゴ"
                   width={120}
                   height={40}
                 />
@@ -226,7 +227,10 @@ const NewNavbar = () => {
                   }`}
                   onClick={closeMobileMenu}
                 >
-                  <span className="nav-text">Home</span>
+                  <span className="nav-text">
+                    {/* Home */}
+                    ホーム
+                  </span>
                 </Link>
                 <Link
                   href="/about-us"
@@ -235,7 +239,10 @@ const NewNavbar = () => {
                   }`}
                   onClick={closeMobileMenu}
                 >
-                  <span className="nav-text">About Us</span>
+                  <span className="nav-text">
+                    {/* About Us */}
+                    私たちについて
+                  </span>
                 </Link>
 
                 {/* Expertise with dropdown functionality */}
@@ -243,7 +250,10 @@ const NewNavbar = () => {
                   className="mobile-nav-item expertise-dropdown"
                   onClick={toggleExpertiseDropdown}
                 >
-                  <span className="nav-text">Area of Expertise</span>
+                  <span className="nav-text">
+                    {/* Area of Expertise */}
+                    専門分野
+                  </span>
                   <span className="nav-icon">
                     <ChevronRight
                       size={25}
@@ -265,9 +275,13 @@ const NewNavbar = () => {
                       onClick={closeMobileMenu}
                     >
                       <div>
-                        <span className="nav-text">Visualization</span>
+                        <span className="nav-text">
+                          {/* Visualization */}
+                          ビジュアライゼーション
+                        </span>
                         <span className="nav-description">
-                          Advanced data visualization solutions
+                          {/* Advanced data visualization solutions */}
+                          高度なデータビジュアライゼーションソリューション
                         </span>
                       </div>
                     </Link>
@@ -279,9 +293,13 @@ const NewNavbar = () => {
                       onClick={closeMobileMenu}
                     >
                       <div>
-                        <span className="nav-text">Product Engineering</span>
+                        <span className="nav-text">
+                          {/* Product Engineering */}
+                          プロダクトエンジニアリング
+                        </span>
                         <span className="nav-description">
-                          End-to-end product development
+                          {/* End-to-end product development */}
+                          エンドツーエンドの製品開発
                         </span>
                       </div>
                     </Link>
@@ -293,43 +311,29 @@ const NewNavbar = () => {
                       onClick={closeMobileMenu}
                     >
                       <div>
-                        <span className="nav-text">Cloud</span>
+                        <span className="nav-text">
+                          {/* Cloud */}
+                          クラウド
+                        </span>
                         <span className="nav-description">
-                          Cloud infrastructure and solutions
+                          {/* Cloud infrastructure and solutions */}
+                          クラウドインフラとソリューション
                         </span>
                       </div>
                     </Link>
                   </div>
                 )}
 
-                <Link
-                  href="/allsolutions"
-                  className={`mobile-nav-item ${
-                    pathname === "/allsolutions" ? "active" : ""
-                  }`}
-                  onClick={closeMobileMenu}
-                >
-                  <span className="nav-text">Solutions</span>
-                </Link>
-                <Link
-                  href="/contact-us"
-                  className={`mobile-nav-item ${
-                    pathname === "/contact-us" ? "active" : ""
-                  }`}
-                  onClick={closeMobileMenu}
-                >
-                  <span className="nav-text">Contact</span>
-                </Link>
-
-                {/* Careers Button */}
+                {/* Contact Us Button */}
                 <div className="mobile-careers-button">
                   <PrimaryButton
                     onClick={() => {
-                      router.push("/careers");
+                      router.push("/contact-us");
                       closeMobileMenu();
                     }}
                   >
-                    Careers
+                    {/* Contact */}
+                    お問い合わせ
                   </PrimaryButton>
                 </div>
               </div>

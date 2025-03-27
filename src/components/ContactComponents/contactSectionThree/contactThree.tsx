@@ -33,7 +33,11 @@ function ContactThree() {
             <br />a culture that encourages you to do your best work.
           </h2>
           <div className="contact-join-us-button-sizer">
-            <SecondaryButton onClick={() => router.push("/careers")}>
+            <SecondaryButton
+              onClick={() => {
+                // router.push("/careers");
+              }}
+            >
               Join Us
             </SecondaryButton>
           </div>

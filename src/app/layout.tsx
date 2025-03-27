@@ -14,8 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pumex",
-  description: "Created By Pumex Team",
+  // title: "Pumex",
+  // description: "Created By Pumex Team",
+  title: "ピュメックス",
+  description: "ピュメックスチームによって作成されました。",
 };
 
 export default function RootLayout({
@@ -24,11 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <ReactLenis root>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+        <body className={`${geistSans.variable} ${geistMono.variable}`}>
+          {children}
+        </body>
       </ReactLenis>
     </html>
   );
