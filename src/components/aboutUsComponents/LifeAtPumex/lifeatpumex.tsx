@@ -8,13 +8,34 @@ import SecondaryButton from "@/components/SecondaryButton/secondaryButton";
 function Lifeatpumex() {
   const router = useRouter();
   const imageSources = [
-    { src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/IMG_0943.svg", alt: "Team Image 1" },
-    { src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/AGM.svg", alt: "Team Image 2" },
-    { src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/OnamSingle (1).svg", alt: "Team Image 3" },
-    { src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/Onam.svg", alt: "Team Image 4" },
-    { src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/Sunset.svg", alt: "Team Image 5" },
-    { src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/IMG_0703.svg", alt: "Team Image 6" },
-    { src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/Aneesh.svg", alt: "Team Image 7" },
+    {
+      src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/IMG_0943.svg",
+      alt: "Team Image 1",
+    },
+    {
+      src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/AGM.svg",
+      alt: "Team Image 2",
+    },
+    {
+      src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/OnamSingle (1).svg",
+      alt: "Team Image 3",
+    },
+    {
+      src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/Onam.svg",
+      alt: "Team Image 4",
+    },
+    {
+      src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/Sunset.svg",
+      alt: "Team Image 5",
+    },
+    {
+      src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/IMG_0703.svg",
+      alt: "Team Image 6",
+    },
+    {
+      src: "https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/Aneesh.svg",
+      alt: "Team Image 7",
+    },
   ];
 
   const [loadedImages, setLoadedImages] = useState<boolean[]>(
@@ -22,7 +43,7 @@ function Lifeatpumex() {
   );
 
   const handleImageLoad = (index: number) => {
-    setLoadedImages(prev => {
+    setLoadedImages((prev) => {
       const newLoadedImages = [...prev];
       newLoadedImages[index] = true;
       return newLoadedImages;
@@ -30,21 +51,23 @@ function Lifeatpumex() {
   };
 
   return (
-    <div 
+    <div
       className="life-at-pumex-main-div"
       style={{
         backgroundImage: `url("https://d2l4gl47o0xxs9.cloudfront.net/landing-assets/Landing-section-one-bg.svg")`,
       }}
     >
       <div className="life-at-pumex-secondary-div">
-        <h1>The Pumex Way</h1>
+        {/* <h1>The Pumex Way</h1> */}
+        <h1>ピュメックスの道</h1>
         <div className="life-at-button-sizer">
           <SecondaryButton onClick={() => router.push("/team-photos")}>
-            View More
+            {/* View More */}
+            もっと見る
           </SecondaryButton>
         </div>
       </div>
-      
+
       <div className="team-image-grid-layer">
         {imageSources.map((image, index) => (
           <div key={index} className={`item${index + 1} image-container`}>
