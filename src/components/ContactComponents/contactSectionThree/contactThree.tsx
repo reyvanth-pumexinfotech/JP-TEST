@@ -1,8 +1,10 @@
 "use client";
 import "./contactThree.css";
 import SecondaryButton from "@/components/SecondaryButton/secondaryButton";
+import { useRouter } from "next/navigation";
 
 function ContactThree() {
+  const router = useRouter();
   return (
     <div className="contact-section-three-main-div">
       <div className="contact-section-three-main-div-box">
@@ -38,7 +40,7 @@ function ContactThree() {
           <div className="contact-join-us-button-sizer">
             <SecondaryButton
               onClick={() => {
-                // router.push("/careers");
+                router.push("/contact-us");
               }}
             >
               {/* Join Us */}
