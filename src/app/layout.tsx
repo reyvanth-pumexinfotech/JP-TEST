@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   // title: "Pumex",
   // description: "Created By Pumex Team",
-  title: "ピュメックス",
-  description: "ピュメックスチームによって作成されました。",
+  title: "プメックス",
+  description: "プメックスチームによって作成されました。",
 };
 
 export default function RootLayout({
