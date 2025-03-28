@@ -11,8 +11,7 @@ function Herosection() {
             <span>technology </span> and <span>expertise</span>.
           </h1> */}
           <h1>
-            {" "}
-            最先端の<span>テクノロジー</span>と<span>専門知識</span>で <br />
+            最先端の<span>テクノロジー</span>と<span>専門知識</span>で
             ビジネスの成長を推進
           </h1>
         </div>

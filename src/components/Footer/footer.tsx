@@ -20,7 +20,7 @@ function Footer() {
   };
   const handleButtonClickContact = () => {
     // Add your button click logic here
-    // router.push("/careers");
+    router.push("/contact-us");
   };
 
   return (
