@@ -1,9 +1,6 @@
 "use client";
-import { useState, useEffect } from "react";
-import Image from "next/image";
+
 import "./VisualizationSection1.css";
-import PrimaryButton from "../../PrimaryButton/primaryButton";
-import { useCallback } from "react";
 
 export default function VisualizationSection1() {
   return (
