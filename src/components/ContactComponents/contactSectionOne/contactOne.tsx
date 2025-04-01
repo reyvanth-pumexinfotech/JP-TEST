@@ -17,7 +17,7 @@ export default function ContactSectionOne() {
   }, []);
 
   const handleContactUsClick = () => {
-    const nextSection = document.querySelector(".contact-section-two-main-div");
+    const nextSection = document.querySelector(".contact-drag-button-sizer");
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }

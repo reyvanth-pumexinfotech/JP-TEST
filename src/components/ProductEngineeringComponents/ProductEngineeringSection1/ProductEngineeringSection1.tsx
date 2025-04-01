@@ -1,4 +1,3 @@
-"use client";
 import "./ProductEngineeringSection1.css";
 
 export default function ProductEngineeringSection1() {
