@@ -207,4 +207,8 @@
     font-family: "Red Hat Display", sans-serif !important;
     font-weight: 300;
   }
+
+  .number-section-two-left.left h2 {
+    margin-bottom: 3vh;
+  }
 }
