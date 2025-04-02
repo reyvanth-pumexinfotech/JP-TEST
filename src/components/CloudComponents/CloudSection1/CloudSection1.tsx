@@ -1,5 +1,3 @@
-"use client";
-
 import "./CloudSection1.css";
 
 export default function CloudSection1() {

@@ -1,127 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
 .contact-section-one-main-div {
-    width: 100%;
-    height: 80vh;
-    background-image: url("../../../../public/assets/ContactAssets/ContactUs-bg.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top left;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Red Hat Display', sans-serif !important;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 80vh;
+  /* background-image: url("../../../../public/assets/ContactAssets/ContactUs-bg.svg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+  font-family: "Red Hat Display", sans-serif !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-section-one-main-div h1 {
-    color: #fff;
-    /* background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%); 
+  color: #fff;
+  /* background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%); 
     -webkit-background-clip: text;
     background-clip: text; */
-    font-weight: 300;
-    text-align: center;
-    font-size: 4rem;
-    font-family: 'Red Hat Display', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .contact-section-one-main-div h2 {
-    color: #c3c3c3;
-    font-weight: 300;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Red Hat Display', sans-serif;
+  color: #c3c3c3;
+  font-weight: 300;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .contact-us-section-one-button-sizer {
-    margin-top: 50px;
-    width: 15%;
-    height: auto;
+  margin-top: 50px;
+  width: 15%;
+  height: auto;
 }
 
-
-
-.contact-drag-button-sizer{
-    width: 15%;
+.contact-drag-button-sizer {
+  width: 15%;
 }
-
-
-
-
-
 
 /* Media Qeuries */
 
-
 @media screen and (max-width: 1000px) {
+  .contact-section-one-main-div h1 {
+    font-size: 3rem;
+  }
 
-    .contact-section-one-main-div h1 {
-        font-size: 3rem;
-    }
+  .contact-section-one-main-div h2 {
+    font-size: 1.25rem;
+  }
 
-    .contact-section-one-main-div h2 {
-        font-size: 1.25rem;
-    }
-
-    .contact-drag-button-sizer{
-        width: 25%;
-    }
-
+  .contact-drag-button-sizer {
+    width: 25%;
+  }
 }
-
-
 
 @media screen and (max-width: 768px) {
+  .contact-section-one-main-div {
+    height: 70vh;
+    padding: 20px;
+    /* margin-top: 10px; */
+  }
 
-    .contact-section-one-main-div {
-        height: 70vh;
-        padding: 20px;
-        /* margin-top: 10px; */
-    }
+  .contact-section-one-main-div h1 {
+    font-size: 2.5rem;
+    margin-top: 100px;
+  }
 
-    .contact-section-one-main-div h1 {
-        font-size: 2.5rem;
-        margin-top: 100px;
-    }
+  .contact-section-one-main-div h2 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+  }
 
-    .contact-section-one-main-div h2 {
-        font-size: 1.1rem;
-        margin-top: 15px;
-    }
-
-    .contact-drag-button-sizer{
-        width: 45%;
-        margin-top: 30px;
-    }
+  .contact-drag-button-sizer {
+    width: 45%;
+    margin-top: 30px;
+  }
 }
 
-
-
-
-
 @media screen and (max-width: 480px) {
+  .contact-section-one-main-div {
+    height: 60vh;
+    padding: 15px;
+  }
 
+  .contact-section-one-main-div h1 {
+    font-size: 2rem;
+    margin-top: 100px;
+  }
 
-    .contact-section-one-main-div {
-        height: 60vh;
-        padding: 15px;
-        
-    }
+  .contact-section-one-main-div h2 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
 
-    .contact-section-one-main-div h1 {
-        font-size: 2rem;
-        margin-top: 100px;
-    }
-
-    .contact-section-one-main-div h2 {
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-
-    .contact-drag-button-sizer {
-        width: 60%;
-    }
-
-
+  .contact-drag-button-sizer {
+    width: 60%;
+  }
 }
