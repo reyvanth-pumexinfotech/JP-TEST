@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 // import NewNavbar from "../../components/NewNavbar/navbar";
 // import Footer from "../../components/Footer/footer";
 import VisualizationSection1 from "../../components/VisualizationComponents/VisualizationSection1/VisualizationSection1";
