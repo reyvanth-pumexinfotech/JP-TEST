@@ -1,391 +1,367 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
-.contact-section-two-main-div{
-    width: 100%;
-    height: 80vh;
-    background-image: url("../../../../public/assets/ContactAssets/Section-2-layer-blur.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size:30% auto;
-    display:flex;
-    font-family: 'Red Hat Display', sans-serif !important;
-    background-position: -10% -100%;
-    justify-content: center;
+.contact-section-two-main-div {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../../../../public/assets/ContactAssets/Section-2-layer-blur.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 30% auto;
+  display: flex;
+  font-family: "Red Hat Display", sans-serif !important;
+  background-position: -10% -100%;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
 }
 
-
-.contact-section-center-wrapper{
-    width: 90%;
-    height: 100%;
-    display: flex;
-    overflow: hidden;
+.contact-section-center-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
 }
-.contact-section-two-main-div-left{
-    width: 70%;
-    height: 100%;
-    padding-right: 10px;
-    display: flex;
-    justify-content: end;
-}
-
-.contact-us-box{
-    width: 100%;
-    border-radius: 8px;
-    height: 75%;
-    border: 2px solid #2D2D2D;
-    display: flex;
-    background-color: #000000e1;
+.contact-section-two-main-div-left {
+  width: 70%;
+  height: 100%;
+  padding-right: 10px;
+  display: flex;
+  justify-content: end;
 }
 
-.contact-us-box-left{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-top: 30px;
+.contact-us-box {
+  width: 100%;
+  border-radius: 8px;
+  height: 75%;
+  border: 2px solid #2d2d2d;
+  display: flex;
+  background-color: #000000e1;
 }
 
-
-
-.contact-us-box-right{
-    width: 50%;
-    padding-right: 20px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    height: 100%;
-}
-.contact-form-input-sizer label{
-    font-size: 1rem;
-    font-weight:300;
-    padding-bottom: 10px;
-    color: #fff;
-    font-family: 'Red Hat Display', sans-serif;
+.contact-us-box-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 30px;
 }
 
-.contact-form-input-sizer{
-    width: 90%;
+.contact-us-box-right {
+  width: 50%;
+  padding-right: 20px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: 100%;
+}
+.contact-form-input-sizer label {
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 10px;
+  color: #fff;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.contact-form-input-sizer {
+  width: 90%;
 }
 
 .message-mobile-only {
-    display: none;
+  display: none;
 }
 
-.contact-button-input-sizer
-{
-    width: 50%;
-    margin-top: 60px;
+.contact-button-input-sizer {
+  width: 50%;
+  margin-top: 60px;
 }
 
-.contact-section-two-main-div-right{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 2%;
+.contact-section-two-main-div-right {
+  width: 78%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* Email Box CSS ----------------------------*/
-.contact-us-email-box{
-    width: 100%;
-    border-radius: 8px;
-    height: 18%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid #2D2D2D; 
+.contact-us-email-box {
+  width: 100%;
+  border-radius: 8px;
+  height: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #2d2d2d;
 }
 
-.contact-us-email-box-top{
-    display: flex;
-    width: 93%;
-    height: 40%;
-    align-items: center;
-    gap: 10px;
-    border-bottom: 2px solid #2D2D2D;
+.contact-us-email-box-top {
+  display: flex;
+  width: 93%;
+  height: 40%;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #2d2d2d;
 }
 
-.contact-us-email-box-top h2{
-    color: #fff;
-    font-size:1.4rem;
-    font-weight: 300;
-    font-family: 'Red Hat Display', sans-serif;
+.contact-us-email-box-top h2 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: "Red Hat Display", sans-serif;
 }
 
-.contact-us-email-box-bottom{
-    display: flex;
-    width: 100%;
-    height: 67%;
-    padding-left: 20px;
-    padding-top: 10px;
+.contact-us-email-box-bottom {
+  display: flex;
+  width: 93%;
+  height: 20%;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
-.contact-us-email-box-bottom h3{
-    color: #fff;
-    font-size:1.1rem;
-    font-weight: 300;
-    font-family: 'Red Hat Display', sans-serif;
+.contact-us-email-box-bottom h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Red Hat Display", sans-serif;
 }
-.contact-us-box-address-box{
-    width: 100%;
-    border-radius: 8px;
-    height: 55%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid #2D2D2D; 
-}
-
-.contact-us-box-address-box-top{
-    width: 93%;
-    display: flex;
-    height: 15%;
-    gap: 10px;
-    border-bottom: 2px solid #2D2D2D;
-    align-items: center;
+.contact-us-box-address-box {
+  width: 100%;
+  border-radius: 8px;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #2d2d2d;
 }
 
-.contact-us-box-address-box-top h2{
-    font-weight: 300;
-    color: #fff;
-    font-size:1.4rem;
-    font-family: 'Red Hat Display', sans-serif;
-    
-}
-.contact-us-box-address-box-bottom{
-    width: 93%;
-    height: 85%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
+.contact-us-box-address-box-top {
+  width: 93%;
+  display: flex;
+  height: 15%;
+  gap: 10px;
+  border-bottom: 2px solid #2d2d2d;
+  align-items: center;
 }
 
-.contact-us-box-address-box-bottom-location{
-    width: 100%;
-    gap: 10px;
-    height: auto;
-    display: flex;
-    padding-top: 10px;
+.contact-us-box-address-box-top h2 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+.contact-us-box-address-box-bottom {
+  width: 93%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.contact-us-box-address-box-bottom-location span{
-    font-weight: 400;
-    font-size: 1.1rem;
-    font-family: 'Red Hat Display', sans-serif;
+.contact-us-box-address-box-bottom-location {
+  width: 100%;
+  gap: 10px;
+  height: auto;
+  display: flex;
+  padding-top: 10px;
+}
+
+.contact-us-box-address-box-bottom-location span {
+  font-weight: 400;
+  font-size: 1.1rem;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .contact-us-box-address-box-bottom-location h3 {
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: 300;
-    transition: all 0.3s ease-in-out;
-    font-family: 'Red Hat Display', sans-serif;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .contact-us-box-address-box-bottom-location h3:hover {
-    background: linear-gradient(to right, #0044ff 0%, #ff09a9 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
+  background: linear-gradient(to right, #0044ff 0%, #ff09a9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
+.pumex-admin-popups-swal-popup {
+  width: 30%;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid #002a93;
+  background-color: #000000;
+  -webkit-box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 1);
+  -moz-box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 1);
+  box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 0.323);
+}
 
+.pumex-admin-popups-swal-title {
+  color: transparent;
+  background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 400;
+  font-family: "Red Hat Display", sans-serif;
+}
 
+.pumex-admin-popups-swal-text {
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Red Hat Display", sans-serif;
+}
 
-.pumex-admin-popups-swal-popup{
-    width: 30%;
+.pumex-admin-popups-swal-button {
+  width: 15vw;
+  height: 5vh;
+  border-radius: 10px;
+  background: linear-gradient(to right, #003acd 0%, #e100b0 100%);
+}
+
+.pumex-admin-popups-swal-button:active {
+  transform: scale(1.05);
+}
+
+/* Media Qeuries */
+
+@media screen and (max-width: 1000px) {
+  .contact-us-email-box-bottom h3 {
+    font-size: 0.9rem;
+  }
+
+  .contact-us-box-address-box-bottom-location h3 {
+    font-size: 0.7rem;
+  }
+
+  .contact-button-input-sizer {
+    margin: 20px 0;
+  }
+
+  .pumex-admin-popups-swal-popup {
+    width: 40%;
     height: auto;
     border-radius: 20px;
     border: 2px solid #002a93;
     background-color: #000000;
-    -webkit-box-shadow: 10px 13px 30px -15px rgba(255,0,255,1);
-  -moz-box-shadow: 10px 13px 30px -15px rgba(255,0,255,1);
-  box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 0.323);
+    -webkit-box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 1);
+    -moz-box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 1);
+    box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 0.323);
   }
-  
-  
-    .pumex-admin-popups-swal-title{
-      color: transparent; 
-      background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%); 
-      -webkit-background-clip: text;
-      background-clip: text;
-      font-weight: 400;
-      font-family: 'Red Hat Display', sans-serif;
-    }
-  
-    .pumex-admin-popups-swal-text{
-      color: #ffffff;
-      font-weight: 400;
-      font-family: 'Red Hat Display', sans-serif;
-    }
-  
-    .pumex-admin-popups-swal-button{
-      width: 15vw;
-      height: 5vh;
-      border-radius: 10px;
-      background: linear-gradient(
-          to right,
-          #003acd 0%,  
-          #e100b0 100% 
-      );
-    }
-  
-    .pumex-admin-popups-swal-button:active{
-      transform: scale(1.05);
-    }
-  
-
-
-
-/* Media Qeuries */
-
-
-@media screen and (max-width: 1000px) {
-    .contact-us-email-box-bottom h3 {
-        font-size: 0.9rem;
-    }
-
-    .contact-us-box-address-box-bottom-location h3 {
-        font-size: 0.7rem;
-    }
-
-    .contact-button-input-sizer {
-        margin: 20px 0;
-    }
-    
-    .pumex-admin-popups-swal-popup{
-        width: 40%;
-        height: auto;
-        border-radius: 20px;
-        border: 2px solid #002a93;
-        background-color: #000000;
-        -webkit-box-shadow: 10px 13px 30px -15px rgba(255,0,255,1);
-      -moz-box-shadow: 10px 13px 30px -15px rgba(255,0,255,1);
-      box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 0.323);
-      }
-      
 }
 
-
 @media screen and (max-width: 768px) {
-    .contact-section-two-main-div {
-        height: auto;
-        padding: 40px 0;
-    }
-    
-    .contact-section-center-wrapper {
-        flex-direction: column;
-        width: 95%;
-        align-items: center;
-    }
+  .contact-section-two-main-div {
+    height: auto;
+    padding: 40px 0;
+  }
 
-    
-    .contact-section-two-main-div-left {
-        width: 80%;
-        padding-right: 0;
-        margin-bottom: 30px;
-    }
-    
-    .contact-section-two-main-div-right {
-        width: 80%;
-        margin: 0 auto;
-        gap: 10px;
-    }
-    
-    
-    .contact-us-email-box {
-        height: auto;
-        padding: 15px 0;
-    }
-    
-    .contact-us-email-box-top h2,
-    .contact-us-box-address-box-top h2 {
-        font-size: 1.2rem;
-    }
-    
-    .contact-us-box-address-box {
-        height: auto;
-        padding: 15px 0;
-    }
+  .contact-section-center-wrapper {
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+  }
 
-    .contact-us-email-box-bottom h3 ,
-    .contact-us-box-address-box-bottom-location h3 {
-        font-size: 0.8rem;
-    }
-    
+  .contact-section-two-main-div-left {
+    width: 80%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
 
-    .contact-us-box-left {
-        width: 100%;
-        padding-left: 0px;
-        align-items: center;
-    }
+  .contact-section-two-main-div-right {
+    width: 80%;
+    margin: 0 auto;
+    gap: 10px;
+  }
 
-    
-    .contact-button-input-sizer {
-        margin: 20px 0;
-    }
+  .contact-us-email-box {
+    height: auto;
+    padding: 15px 0;
+  }
 
-    .contact-us-box-right {
-        display: none;
-    }
+  .contact-us-email-box-top h2,
+  .contact-us-box-address-box-top h2 {
+    font-size: 1.2rem;
+  }
 
-    .message-mobile-only {
-        display: block;
-    }
+  .contact-us-box-address-box {
+    height: auto;
+    padding: 15px 0;
+  }
 
-    .pumex-admin-popups-swal-popup{
-        width: 50%;
-        height: auto;
-        border-radius: 20px;
-        border: 2px solid #002a93;
-        background-color: #000000;
-        -webkit-box-shadow: 10px 13px 30px -15px rgba(255,0,255,1);
-      -moz-box-shadow: 10px 13px 30px -15px rgba(255,0,255,1);
-      box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 0.323);
-      }
-      
-      
+  .contact-us-email-box-bottom h3,
+  .contact-us-box-address-box-bottom-location h3 {
+    font-size: 0.8rem;
+  }
 
+  .contact-us-box-left {
+    width: 100%;
+    padding-left: 0px;
+    align-items: center;
+  }
 
-    
+  .contact-button-input-sizer {
+    margin: 20px 0;
+  }
 
+  .contact-us-box-right {
+    display: none;
+  }
+
+  .message-mobile-only {
+    display: block;
+  }
+
+  .pumex-admin-popups-swal-popup {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid #002a93;
+    background-color: #000000;
+    -webkit-box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 1);
+    -moz-box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 1);
+    box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 0.323);
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .contact-section-two-main-div {
+    margin-top: 6vh;
+  }
+  .contact-section-two-main-div-left,
+  .contact-section-two-main-div-right {
+    width: 97%;
+  }
 
-    .contact-section-two-main-div-left,
-    .contact-section-two-main-div-right {
-        width: 97%;
-    }
+  .contact-us-email-box-top h2,
+  .contact-us-box-address-box-top h2 {
+    font-size: 1.1rem;
+  }
 
-    .contact-us-email-box-top h2,
-    .contact-us-box-address-box-top h2 {
-        font-size: 1.1rem;
-    }
-    
+  .contact-form-input-sizer label {
+    font-size: 0.85rem;
+  }
 
-    .contact-form-input-sizer label {
-        font-size: 0.85rem;
-    }
-    
-    .contact-button-input-sizer {
-        width: 90%;
-    }
+  .contact-button-input-sizer {
+    width: 90%;
+  }
 
-    .pumex-admin-popups-swal-popup{
-        width: 90%;
-        height: auto;
-        border-radius: 20px;
-        border: 2px solid #002a93;
-        background-color: #000000;
-        -webkit-box-shadow: 10px 13px 30px -15px rgba(255,0,255,1);
-      -moz-box-shadow: 10px 13px 30px -15px rgba(255,0,255,1);
-      box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 0.323);
-      }
-      
-      
+  .pumex-admin-popups-swal-popup {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid #002a93;
+    background-color: #000000;
+    -webkit-box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 1);
+    -moz-box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 1);
+    box-shadow: 10px 13px 30px -15px rgba(255, 0, 255, 0.323);
+  }
 }
-

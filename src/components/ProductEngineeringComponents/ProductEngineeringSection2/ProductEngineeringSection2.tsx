@@ -28,47 +28,46 @@ const Bento: React.FC = () => {
 
   return (
     <div className="product-engineering-section2-div">
-    <div className="bento-container" onMouseMove={handleMouseMove}>
-      <div className="bento-box nodejs">
-        <h2>Node Js</h2>
-        <Image src={Nodejs} alt="NodeJs Logo" />
+      <div className="bento-container" onMouseMove={handleMouseMove}>
+        <div className="bento-box nodejs">
+          <h2>Node Js</h2>
+          <Image src={Nodejs} alt="NodeJs Logo" />
+        </div>
+        <div className="bento-box golang">
+          <Image src={Golang} alt="Golang Logo" />
+          <h2>Golang</h2>
+        </div>
+        <div className="bento-box java">
+          <h2>Java</h2>
+          <Image src={Java} alt="Java Logo" />
+        </div>
+        <div className="bento-box python">
+          <Image src={Python} alt="Python Logo" />
+          <h2>Python</h2>
+        </div>
+        <div className="bento-box nestjs">
+          <h2>NestJs</h2>
+          <Image src={Nest} alt="NestJs Logo" />
+        </div>
+        <div className="bento-box dotnet">
+          <Image src={Dotnet} alt="Dotnet Logo" />
+          <h2>Dotnet</h2>
+        </div>
+        <div className="bento-box php">
+          <Image src={PHP} alt="PHP Logo" />
+          <h2>PHP</h2>
+        </div>
+        <div className="bento-box mongodb">
+          <Image src={MongoDb} alt="MongoDB Logo" />
+          <h2>MongoDB</h2>
+        </div>
+        <div className="bento-box mysql">
+          <Image src={MySql} alt="MySQL Logo" />
+          <h2>MySQL</h2>
+        </div>
       </div>
-      <div className="bento-box golang">
-        <Image src={Golang} alt="Golang Logo" />
-        <h2>Golang</h2>
-      </div>
-      <div className="bento-box java">
-        <h2>Java</h2>
-        <Image src={Java} alt="Java Logo" />
-      </div>
-      <div className="bento-box python">
-        <Image src={Python} alt="Python Logo" />
-        <h2>Python</h2>
-      </div>
-      <div className="bento-box nestjs">
-        <h2>NestJs</h2>
-        <Image src={Nest} alt="NestJs Logo" />
-      </div>
-      <div className="bento-box dotnet">
-        <Image src={Dotnet} alt="Dotnet Logo" />
-        <h2>Dotnet</h2>
-      </div>
-      <div className="bento-box php">
-        <Image src={PHP} alt="PHP Logo" />
-        <h2>PHP</h2>
-      </div>
-      <div className="bento-box mongodb">
-        <Image src={MongoDb} alt="MongoDB Logo" />
-        <h2>MongoDB</h2>
-      </div>
-      <div className="bento-box mysql">
-        <Image src={MySql} alt="MySQL Logo" />
-        <h2>MySQL</h2>
-      </div>
-    </div>
     </div>
   );
 };
 
 export default Bento;
-

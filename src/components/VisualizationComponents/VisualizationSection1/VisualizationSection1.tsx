@@ -1,5 +1,3 @@
-"use client";
-
 import "./VisualizationSection1.css";
 
 export default function VisualizationSection1() {

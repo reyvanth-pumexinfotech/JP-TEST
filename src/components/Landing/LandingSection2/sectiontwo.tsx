@@ -14,7 +14,7 @@ function LandingSectionTwo() {
         <h3>世界中の企業をサポートするツールと統合</h3>
       </div>
       <div className="landing-section-two-animate-bottom">
-        <div className="number-section-two-left">
+        <div className="number-section-two-left left">
           {/* <h1>15+</h1>
           <h2>Years in Business</h2> */}
           <h1>15+</h1>
