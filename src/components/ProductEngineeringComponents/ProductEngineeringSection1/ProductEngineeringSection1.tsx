@@ -9,7 +9,7 @@ export default function ProductEngineeringSection1() {
         Product Engineering for a Tech-Driven Future.
       </h1> */}
       <h1>
-        製品エンジニアリング - スケーラブルで高性能な製品の開発
+        製品エンジニアリング: スケーラブルで高性能な製品の開発
         <br />
         技術主導の未来のための製品工学。
       </h1>

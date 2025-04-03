@@ -333,6 +333,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .contact-section-two-main-div {
+    margin-top: 6vh;
+  }
   .contact-section-two-main-div-left,
   .contact-section-two-main-div-right {
     width: 97%;

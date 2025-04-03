@@ -94,7 +94,7 @@
 @media screen and (max-width: 768px) {
   .contact-section-three-main-div-box {
     width: 90%;
-    height: 50vh;
+    height: 75vh;
   }
 
   .content-overlay h1 {
@@ -129,7 +129,7 @@
   }
 
   .content-overlay h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 0 10px;
   }
 
