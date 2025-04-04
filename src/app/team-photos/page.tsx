@@ -1,12 +1,17 @@
 import { getImagesApi } from "@/services/imagesService";
 import "./ourteam.css";
 
+import Navbar from "@/components/NewNavbar/navbar";
+import Footer from "@/components/Footer/footer";
+
 export default async function OurTeamPage() {
   const images = await getImagesApi(); // Server-side API call
 
   return (
     <div>
-      <div className="navbar-holder">{/* <Navbar /> */}</div>
+      <div className="navbar-holder">
+        <Navbar />
+      </div>
       <div className="pics-main">
         <div className="pics-top-infobar">
           <h1>ピュメックスの道</h1>
@@ -35,6 +40,7 @@ export default async function OurTeamPage() {
             </div>
           ))}
         </div>
+        <Footer />
       </div>
     </div>
   );

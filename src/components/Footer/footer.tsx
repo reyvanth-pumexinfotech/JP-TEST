@@ -33,6 +33,7 @@ function Footer() {
               Start your tech journey with <br />
               Pumex Infotech.
             </h3> */}
+            <h2>私たちの一員になりたいですか?</h2>
             <h2>私たちと一緒に！</h2>
             <h3>
               ピュメックス・インフォテックとともに
@@ -43,7 +44,7 @@ function Footer() {
             <div className="button-sizing-footer">
               <PrimaryButton onClick={handleButtonClickContact}>
                 {/* Join */}
-                参加する
+                私たちと一緒に
               </PrimaryButton>
             </div>
           </div>
@@ -54,7 +55,8 @@ function Footer() {
               <br />
               truly extraordinary.
             </h3> */}
-            <h2>アイデアをお持ちですか？お問い合わせ</h2>
+            <h2>アイデアをお持ちですか？</h2>
+            <h2>連絡 !</h2>
             <h3>
               たった60秒で、
               <br /> 本当に特別なことを始めましょう。
@@ -63,7 +65,7 @@ function Footer() {
             <div className="button-sizing-footer">
               <PrimaryButton onClick={handleButtonClickJoinUs}>
                 {/* Ping */}
-                ピング
+                連絡
               </PrimaryButton>
             </div>
           </div>
