@@ -11,7 +11,7 @@ function FoundingMemebers() {
       }}
     >
       {/* <h1>Our Founding Members</h1> */}
-      <h1>創立メンバー</h1>.
+      <h1>私たちの創設メンバー</h1>.
       <div className="founding-members-view">
         {/* Babu T Jose */}
         <div className="founding-members-card">
