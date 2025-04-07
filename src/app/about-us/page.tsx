@@ -1,6 +1,6 @@
 import "./aboutus.css";
-// import Footer from "../../components/Footer/footer";
-// import Navbar from "../../components/NewNavbar/navbar";
+import Footer from "../../components/Footer/footer";
+import Navbar from "../../components/NewNavbar/navbar";
 import Herosection from "@/components/aboutUsComponents/HeroSection/herosection";
 import TextSection from "@/components/aboutUsComponents/AboutUSText/aboutUsText";
 import FoundingMemebers from "@/components/aboutUsComponents/FoundingMembers/foundingMemebers";
@@ -12,14 +12,14 @@ export default function AboutUs() {
   return (
     <div className="about-main-container">
       <Loader duration={2000} />
-      {/* <Navbar /> */}
+      <Navbar />
       <Herosection />
       <TextSection />
       <FoundingMemebers />
       {/* <TextScroll /> */}
       {/* <div className="line-div-for-about-us"></div> */}
       <LifeAtPumex />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
