@@ -33,8 +33,8 @@ function Footer() {
               Start your tech journey with <br />
               Pumex Infotech.
             </h3> */}
-            <h2>私たちの一員になりたいですか?</h2>
             <h2>私たちと一緒に！</h2>
+            {/* <h2></h2> */}
             <h3>
               ピュメックス・インフォテックとともに
               <br />
@@ -55,8 +55,8 @@ function Footer() {
               <br />
               truly extraordinary.
             </h3> */}
-            <h2>アイデアをお持ちですか？</h2>
-            <h2>連絡 !</h2>
+            <h2>アイデアをお持ちですか？ 連絡 !</h2>
+            {/* <h2></h2> */}
             <h3>
               たった60秒で、
               <br /> 本当に特別なことを始めましょう。
