@@ -4,8 +4,8 @@ import { useState } from "react";
 import "./page.css";
 
 import LandingLoader from "@/components/LandingLoader/LandingLoader";
-// import Navbar from "@/components/NewNavbar/navbar";
-// import Footer from "@/components/Footer/footer";
+import Navbar from "@/components/NewNavbar/navbar";
+import Footer from "@/components/Footer/footer";
 import Section1 from "@/components/Landing/LandingSection1/landingSection";
 import Section2 from "@/components/Landing/LandingSection2/sectiontwo";
 import Section3 from "@/components/Landing/LandingSection3/sectionThree";
@@ -45,14 +45,14 @@ const Page = () => {
       <div
         className={`landing-container-main ${loading ? "hidden-content" : ""}`}
       >
-        {/* <Navbar /> */}
+        <Navbar />
         <Section1 />
         <Section2 />
         <Section3 />
         <Section4 />
         <Section5 />
         <Section6 />
-        {/* <Footer /> */}
+        <Footer />
       </div>
 
       {loading && <LandingLoader onLoadingComplete={() => setLoading(false)} />}

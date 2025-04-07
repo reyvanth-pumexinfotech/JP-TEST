@@ -44,7 +44,7 @@ function ContactThree() {
               }}
             >
               {/* Join Us */}
-              参加する
+              私たちと一緒に
             </SecondaryButton>
           </div>
         </div>

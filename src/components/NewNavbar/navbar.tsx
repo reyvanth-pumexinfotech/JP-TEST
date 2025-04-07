@@ -137,7 +137,7 @@ const NewNavbar = () => {
             }`}
           >
             {/* Area of Expertise */}
-            専門分野
+            専門領域
           </Link>
 
           {isExpertiseOpen && (
@@ -195,7 +195,7 @@ const NewNavbar = () => {
         <div className="navbar-button-sizer">
           <PrimaryButton onClick={() => router.push("/contact-us")}>
             {/* Contact Us */}
-            お問い合わせ
+            連絡
           </PrimaryButton>
         </div>
       </div>
