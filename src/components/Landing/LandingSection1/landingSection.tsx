@@ -13,6 +13,9 @@ const LandingSection: React.FC = () => {
     const handleContextLost = (e: Event) => {
       e.preventDefault();
       console.warn("WebGL context lost. Displaying fallback UI.");
+      setTimeout(() => {
+        // window.location.href = window.location.href;
+      }, 10000);
       setIsWebGLAvailable(false);
     };
 
@@ -34,6 +37,9 @@ const LandingSection: React.FC = () => {
         <p>
           3Dコンテンツが利用できません。更新するか、対応するブラウザをお試しください。
         </p>
+        <button onClick={() => (window.location.href = window.location.href)}>
+          Try Reloading
+        </button>
       </div>
     );
   }, [isWebGLAvailable]);
