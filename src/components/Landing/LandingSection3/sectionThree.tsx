@@ -12,13 +12,48 @@ function SectionThree() {
   const video3Url = "https://d2l4gl47o0xxs9.cloudfront.net/cloudEnvy.mp4";
 
   useEffect(() => {
-    [video1Ref, video2Ref, video3Ref].forEach((ref) => {
+    const videoRefs = [video1Ref, video2Ref, video3Ref];
+
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        const videoElement = entry.target as HTMLVideoElement;
+
+        if (entry.isIntersecting) {
+          // Play the video when it is in the viewport
+          videoElement
+            .play()
+            .then(() => {
+              // console.log("Video is playing");
+            })
+            .catch((e) => {
+              console.error("Failed to play video:", e);
+            });
+        } else {
+          // Pause the video when it is out of the viewport
+          videoElement.pause();
+          // console.log("Video is paused because it is out of the viewport");
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.25, // Adjust threshold as needed (50% of the video must be visible)
+    });
+
+    videoRefs.forEach((ref) => {
       if (ref.current) {
-        ref.current.play().catch((e) => {
-          console.warn("Autoplay failed:", e);
-        });
+        observer.observe(ref.current);
       }
     });
+
+    // Cleanup observer on unmount
+    return () => {
+      videoRefs.forEach((ref) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
+    };
   }, []);
 
   return (
@@ -40,6 +75,7 @@ function SectionThree() {
                 muted
                 playsInline
                 controls={false}
+                preload="auto"
                 className="landing-section-one-background-video"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               >
@@ -88,6 +124,7 @@ function SectionThree() {
                 muted
                 playsInline
                 controls={false}
+                preload="auto"
                 className="landing-section-one-background-video"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               >
@@ -119,6 +156,7 @@ function SectionThree() {
                 muted
                 playsInline
                 controls={false}
+                preload="auto"
                 className="landing-section-one-background-video"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               >

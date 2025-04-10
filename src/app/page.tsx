@@ -62,7 +62,7 @@ const Page = () => {
     <>
       <div className="landing-container-main">
         <Navbar />
-        <Suspense fallback={<Loader />}>
+        <Suspense fallback={<Loader duration={5000} />}>
           <Section1 />
           <Section2 />
           <Section3 />
