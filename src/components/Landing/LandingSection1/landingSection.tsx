@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useRef, useState } from "react";
 import Spline from "@splinetool/react-spline";
 import "./landingSection.css";
