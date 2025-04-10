@@ -1,17 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import "./page.css";
+import Loader from "@/components/Loader/Loader";
 
-import LandingLoader from "@/components/LandingLoader/LandingLoader";
 import Navbar from "@/components/NewNavbar/navbar";
 import Footer from "@/components/Footer/footer";
-import Section1 from "@/components/Landing/LandingSection1/landingSection";
-import Section2 from "@/components/Landing/LandingSection2/sectiontwo";
-import Section3 from "@/components/Landing/LandingSection3/sectionThree";
-import Section4 from "@/components/Landing/LandingSection4/sectionFour";
-import Section5 from "@/components/Landing/LandingSection5/sectionFive";
-import Section6 from "@/components/Landing/LandingSection6/sectionSix";
+
+import LandingLoader from "@/components/LandingLoader/LandingLoader";
+const Section1 = lazy(
+  () => import("@/components/Landing/LandingSection1/landingSection")
+);
+const Section2 = lazy(
+  () => import("@/components/Landing/LandingSection2/sectiontwo")
+);
+const Section3 = lazy(
+  () => import("@/components/Landing/LandingSection3/sectionThree")
+);
+const Section4 = lazy(
+  () => import("@/components/Landing/LandingSection4/sectionFour")
+);
+const Section5 = lazy(
+  () => import("@/components/Landing/LandingSection5/sectionFive")
+);
+const Section6 = lazy(
+  () => import("@/components/Landing/LandingSection6/sectionSix")
+);
 
 // const Page = () => {
 //   const [loading, setLoading] = useState(true);
@@ -40,22 +54,24 @@ import Section6 from "@/components/Landing/LandingSection6/sectionSix";
 const Page = () => {
   const [loading, setLoading] = useState(true);
 
+  if (loading) {
+    return <LandingLoader onLoadingComplete={() => setLoading(false)} />;
+  }
+
   return (
     <>
-      <div
-        className={`landing-container-main ${loading ? "hidden-content" : ""}`}
-      >
+      <div className="landing-container-main">
         <Navbar />
-        <Section1 />
-        <Section2 />
-        <Section3 />
-        <Section4 />
-        <Section5 />
-        <Section6 />
+        <Suspense fallback={<Loader duration={5000} />}>
+          <Section1 />
+          <Section2 />
+          <Section3 />
+          <Section4 />
+          <Section5 />
+          <Section6 />
+        </Suspense>
         <Footer />
       </div>
-
-      {loading && <LandingLoader onLoadingComplete={() => setLoading(false)} />}
     </>
   );
 };
