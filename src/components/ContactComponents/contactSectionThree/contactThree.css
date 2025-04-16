@@ -147,3 +147,24 @@
     transform: scale(1.8);
   }
 }
+@media screen and (max-width: 992px) and (max-height: 576px) and (orientation: landscape) {
+  .contact-section-three-main-div-box {
+    height: 85vh;
+  }
+
+  .content-overlay h1 {
+    font-size: 2.7rem;
+  }
+
+  .content-overlay h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-join-us-button-sizer > .secondary-button-main {
+    height: 50px;
+  }
+
+  .contact-join-us-button-sizer {
+    width: 35%;
+  }
+}

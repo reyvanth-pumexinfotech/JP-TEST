@@ -258,7 +258,6 @@
 }
 
 .cloud-right-bottom-div {
-  flex: 1;
   padding: 1.5rem;
   background-color: transparent;
   border-radius: 12px;
@@ -406,5 +405,10 @@
 
   .explore-btn {
     width: 70%;
+  }
+}
+@media screen and (max-width: 992px) and (max-height: 576px) and (orientation: landscape) {
+  .explore-btn > .primary-button-main {
+    height: 50px;
   }
 }

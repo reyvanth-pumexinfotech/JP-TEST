@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
 .loader-overlay {
   position: fixed;
@@ -20,7 +20,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/BG-less.svg '); /* Replace with your image URL */
+  background-image: url("https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/BG-less.svg "); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,79 +34,77 @@
 }
 
 .loader-content p {
-  font-family: "Chakra Petch", sans-serif !important;
+  font-family: "Red Hat Display", sans-serif !important;
   font-weight: 300;
   font-style: normal;
   color: #fff;
   font-size: 1rem;
-  margin: 0;  
-  padding: 1rem;/* Optional: adds a semi-transparent background to make text more readable */
+  margin: 0;
+  padding: 1rem; /* Optional: adds a semi-transparent background to make text more readable */
   border-radius: 4px;
 }
 
 .loader-content h2 {
-  font-family: "Chakra Petch", sans-serif !important;
+  font-family: "Red Hat Display", sans-serif !important;
   font-weight: 300;
   font-style: normal;
-  color: transparent; 
-  background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%); 
+  color: transparent;
+  background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%);
   -webkit-background-clip: text;
   background-clip: text;
   font-size: 1.2rem;
-  margin-bottom: 5px;  
+  margin-bottom: 5px;
   border-radius: 4px;
 }
 
-
 @media screen and (max-width: 768px) {
   .loader-content p {
-    font-family: "Chakra Petch", sans-serif !important;
+    font-family: "Red Hat Display", sans-serif !important;
     font-weight: 300;
     font-style: normal;
     color: #fff;
     font-size: 1rem;
-    margin: 0;  
-    padding: 1rem;/* Optional: adds a semi-transparent background to make text more readable */
+    margin: 0;
+    padding: 1rem; /* Optional: adds a semi-transparent background to make text more readable */
     border-radius: 4px;
   }
-  
+
   .loader-content h2 {
-    font-family: "Chakra Petch", sans-serif !important;
+    font-family: "Red Hat Display", sans-serif !important;
     font-weight: 300;
     font-style: normal;
-    color: transparent; 
-    background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%); 
+    color: transparent;
+    background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%);
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 1.2rem;
-    margin-bottom: 5px;  
+    margin-bottom: 5px;
     border-radius: 4px;
   }
 }
 
-
 @media screen and (max-width: 480px) {
   .loader-content p {
-    font-family: "Chakra Petch", sans-serif !important;
+    font-family: "Red Hat Display", sans-serif !important;
     font-weight: 300;
     font-style: normal;
     color: #fff;
     font-size: 1rem;
-    margin: 0;  
-    padding: 1rem;/* Optional: adds a semi-transparent background to make text more readable */
+    margin: 0;
+    padding: 1rem; /* Optional: adds a semi-transparent background to make text more readable */
     border-radius: 4px;
   }
-  
+
   .loader-content h2 {
-    font-family: "Chakra Petch", sans-serif !important;
+    font-family: "Red Hat Display", sans-serif !important;
     font-weight: 300;
     font-style: normal;
-    color: transparent; 
-    background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%); 
+    color: transparent;
+    background: linear-gradient(to right, #0044ff 0%, #ff09a9 50%);
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 1.2rem;
-    margin-bottom: 5px;  
+    margin-bottom: 5px;
     border-radius: 4px;
   }
 }

@@ -267,3 +267,65 @@
     font-family: "Red Hat Display", sans-serif !important;
   }
 }
+
+@media screen and (max-width: 1400px) and (max-height: 576px) and (orientation: landscape) {
+  .founding-memebers-main-div h1 {
+    font-size: 2rem;
+  }
+
+  .founding-members-view {
+    gap: 15px;
+  }
+
+  .founding-members-card {
+    width: 28%;
+    height: 350px;
+  }
+
+  .founding-members-card-bottom-left h1 {
+    font-size: 20px;
+  }
+
+  .founding-members-card-bottom-left h2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-height: 576px) and (orientation: landscape) {
+  .founding-memebers-main-div {
+    min-height: 80vh;
+    padding-bottom: 20px;
+  }
+
+  .founding-memebers-main-div h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .founding-members-view {
+    gap: 10px;
+  }
+
+  .founding-members-card {
+    width: 40%;
+    height: 350px;
+  }
+
+  .founding-members-card-top,
+  .founding-members-card-top-satheesh {
+    height: 80%;
+  }
+
+  .founding-members-card-bottom {
+    height: 20%;
+  }
+
+  .founding-members-card-bottom-left h1 {
+    font-size: 1.2rem;
+    padding-top: 5px;
+  }
+
+  .founding-members-card-bottom-left h2 {
+    font-size: 0.8rem;
+  }
+}

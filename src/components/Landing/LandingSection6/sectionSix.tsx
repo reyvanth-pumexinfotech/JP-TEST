@@ -15,7 +15,7 @@ import Credenceid from "../../../../public/assets/Client/Credneceid.svg";
 import Sarto from "../../../../public/assets/Client/Sarto.svg";
 import Millenium from "../../../../public/assets/Client/millennium.svg";
 import EducationGalaxy from "../../../../public/assets/Client/Education Galaxy.svg";
-import ezeepay from "../../../../public/assets/Client/zzeepay.svg";
+import ezeepay from "../../../../public/assets/Client/ezepay.svg";
 import ains from "../../../../public/assets/Client/ains.svg";
 import aret from "../../../../public/assets/Client/aret.svg";
 import "./sectionSix.css";
