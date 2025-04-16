@@ -131,7 +131,7 @@ const NewNavbar = () => {
           onMouseLeave={handleMouseLeave}
         >
           <Link
-            href="/"
+            href=""
             className={`nav-option nav-with-arrow ${
               isExpertiseOpen ? "active-nav-option" : ""
             }`}

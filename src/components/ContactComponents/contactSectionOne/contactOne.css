@@ -108,3 +108,17 @@
     width: 60%;
   }
 }
+
+@media screen and (max-width: 992px) and (max-height: 576px) and (orientation: landscape) {
+  .contact-section-one-main-div {
+    height: 100vh;
+  }
+
+  .contact-section-one-main-div h1 {
+    margin-top: 25vh;
+  }
+
+  .contact-drag-button-sizer > .secondary-button-main {
+    height: 50px;
+  }
+}
