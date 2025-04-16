@@ -14,7 +14,6 @@
   font-family: "Red Hat Display", sans-serif !important;
   box-shadow: 0 0 20px #003acd62;
   transition: box-shadow 0.3s ease-in-out;
-  justify-self: anchor-center;
 }
 
 .newnav-main-div-left {
@@ -42,6 +41,7 @@
   color: rgb(255, 255, 255);
   font-family: "Red Hat Display", sans-serif;
   font-size: 18px;
+  font-weight: 300;
 }
 
 .nav-option:hover {
@@ -131,7 +131,7 @@
   color: rgb(255, 255, 255);
   font-family: "Red Hat Display", sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 4px;
 }
 
@@ -446,7 +446,15 @@
 
 @media screen and (max-width: 1024px) {
   .newnav-main-div-right {
-    gap: 15px;
+    gap: 18px;
+  }
+
+  .newnav-main-div-left {
+    width: 20%;
+  }
+
+  .newnav-main-div-right {
+    width: 80%;
   }
 
   .nav-option {
@@ -458,7 +466,7 @@
   }
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 992px) {
   .newnav-main-div {
     height: 60px;
   }
@@ -524,8 +532,10 @@
   .mobile-menu-footer {
     padding: 20px 16px;
   }
+}
 
-  .nav-description {
-    font-size: 12px;
+@media screen and (max-width: 992px) and (max-height: 576px) and (orientation: landscape) {
+  .mobile-careers-button > .primary-button-main {
+    height: 50px;
   }
 }

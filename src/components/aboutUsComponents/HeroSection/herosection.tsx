@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "./herosection.css";
 
 function Herosection() {
@@ -31,9 +32,13 @@ function Herosection() {
         </div>
       </div>
       <div className="image-about-us-section">
-        <img
-          src="https://d2l4gl47o0xxs9.cloudfront.net/AboutUs-Assets/Banner-pumex.svg"
+        <Image
+          src="https://pumex-website-prod-bucket.s3.us-east-1.amazonaws.com/decomression-folder/Banner-pumex.svg"
           alt="Pumex Banner"
+          layout="responsive"
+          width={1440}
+          height={800}
+          priority
         />
       </div>
     </div>

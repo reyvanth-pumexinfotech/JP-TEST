@@ -15,6 +15,7 @@
   background-repeat: no-repeat;
   background-position: bottom -130px left -130px;
   font-family: "Red Hat Display", sans-serif !important;
+  font-weight: 300;
   border-top: 2px solid #ff09a93e;
 }
 
@@ -166,6 +167,7 @@
   padding-bottom: 0;
   padding-left: 50px;
   padding-top: 80px;
+  font-weight: 300;
 }
 .usa-address {
   width: 100%;
@@ -190,14 +192,14 @@
 .usa-address span {
   font-family: "Red Hat Display", sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
   color: #ffffffa5 !important;
 }
 
 .usa-address h3 {
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   color: #ffffff !important;
 }
 
@@ -216,7 +218,7 @@
   font-family: "Red Hat Display", sans-serif;
   font-size: 24px;
   padding-bottom: 20px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .footer-main-div-center-align a {
@@ -224,7 +226,7 @@
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
   padding-bottom: 10px;
-  font-weight: 500;
+  font-weight: 300;
   transition: color 0.3s ease, background 0.3s ease-in-out;
 }
 
@@ -253,7 +255,7 @@
   font-family: "Red Hat Display", sans-serif;
   font-size: 24px;
   padding-bottom: 20px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .footer-main-div-center-right a {
@@ -261,7 +263,7 @@
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
   padding-bottom: 10px;
-  font-weight: 500;
+  font-weight: 300;
   transition: color 0.3s ease, background 0.3s ease-in-out;
 }
 
@@ -544,5 +546,15 @@
 
   .usa-address h3 {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-height: 576px) and (orientation: landscape) {
+  .button-sizing-footer {
+    width: 70%;
+  }
+
+  .button-sizing-footer > .primary-button-main {
+    height: 50px;
   }
 }
