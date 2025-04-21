@@ -57,7 +57,7 @@
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  gap: 5px; /* Adjust this to control spacing */
+  gap: 5px; /* Adjust this to control  spacing */
 }
 
 .photo-layer-1 img,

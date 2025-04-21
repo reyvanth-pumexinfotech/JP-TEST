@@ -5,7 +5,7 @@ import Navbar from "@/components/NewNavbar/navbar";
 import Footer from "@/components/Footer/footer";
 
 export default async function OurTeamPage() {
-  const images = await getImagesApi(); // Server-side API call
+  const images = await getImagesApi(); // Server-side  API call
 
   return (
     <div>
